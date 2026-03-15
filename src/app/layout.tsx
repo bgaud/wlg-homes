@@ -27,6 +27,18 @@ export const metadata: Metadata = {
     siteName: "WLG Homes",
     locale: "en_CA",
     type: "website",
+    title: "WLG Homes | Saskatoon Trades & Construction",
+    description:
+      "WLG Homes offers expert roofing, framing, electrical, and renovation services in Saskatoon, SK. 45+ years combined experience.",
+    url: "https://wlghomes.ca",
+    images: [
+      {
+        url: "/images/hero.png",
+        width: 1200,
+        height: 630,
+        alt: "WLG Homes — Saskatoon Trades & Construction",
+      },
+    ],
   },
 };
 
@@ -51,7 +63,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en">
+    <html lang="en-CA">
       <head>
         <script
           type="application/ld+json"
