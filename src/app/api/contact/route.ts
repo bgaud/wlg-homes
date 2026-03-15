@@ -32,7 +32,6 @@ export async function POST(req: NextRequest) {
     if (keyJson && sheetId) {
       try {
         const credentials = JSON.parse(keyJson);
-        console.error("Sheets debug — service account:", credentials.client_email, "| sheetId:", sheetId);
         const auth = new google.auth.GoogleAuth({
           credentials,
           scopes: ["https://www.googleapis.com/auth/spreadsheets"],
