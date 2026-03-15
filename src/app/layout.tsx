@@ -23,6 +23,10 @@ export const metadata: Metadata = {
     "renovation contractor Saskatoon",
     "Christmas lighting installation",
   ],
+  icons: {
+    icon: "/images/logo.png",
+    apple: "/images/logo.png",
+  },
   openGraph: {
     siteName: "WLG Homes",
     locale: "en_CA",
