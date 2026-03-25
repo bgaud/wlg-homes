@@ -69,7 +69,10 @@ const jsonLd = {
   url: "https://wlghomes.ca",
   image: "https://wlghomes.ca/images/hero.png",
   openingHours: ["Mo-Fr 07:00-18:00", "Sa 08:00-16:00"],
-  sameAs: ["https://share.google/u03WLiEyJxHnOhaKB"],
+  sameAs: [
+    "https://share.google/u03WLiEyJxHnOhaKB",
+    "https://www.facebook.com/profile.php?id=61584288716942",
+  ],
 };
 
 export default function RootLayout({
