@@ -3,9 +3,24 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Portfolio",
+  title: "Portfolio - Roofing, Framing & Electrical Projects Saskatoon",
   description:
     "Browse WLG Homes' portfolio of completed projects in Saskatoon — framing, roofing, electrical, basement renovations, garage builds, and Christmas lighting.",
+  alternates: { canonical: "https://wlghomes.ca/portfolio" },
+  openGraph: {
+    title: "Portfolio - Roofing, Framing & Electrical Projects Saskatoon",
+    description:
+      "Browse WLG Homes' portfolio of completed projects in Saskatoon — framing, roofing, electrical, basement renovations, garage builds, and Christmas lighting.",
+    url: "https://wlghomes.ca/portfolio",
+    images: [{ url: "/images/hero.png", width: 1200, height: 630, alt: "WLG Homes completed projects in Saskatoon" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Portfolio - Roofing, Framing & Electrical Projects Saskatoon",
+    description:
+      "Browse WLG Homes' portfolio of completed projects in Saskatoon — framing, roofing, electrical, basement renovations, garage builds, and Christmas lighting.",
+    images: ["/images/hero.png"],
+  },
 };
 
 const projects = [
@@ -77,7 +92,6 @@ export default function PortfolioPage() {
 
       <section className="py-16 bg-[#f8fafc]" aria-labelledby="projects-heading">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Category labels */}
           <div className="flex flex-wrap gap-2 mb-10" role="list" aria-label="Project categories">
             {categories.map((cat) => (
               <span

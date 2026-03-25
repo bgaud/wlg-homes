@@ -2,18 +2,19 @@ import Link from "next/link";
 import Image from "next/image";
 
 const services = [
-  "Renovations",
-  "Construction Framing",
-  "Roofing",
-  "Electrical",
-  "Garage Framing",
-  "Basement Framing",
-  "Seasonal Lighting",
+  { label: "Renovations", href: "/services/renovations" },
+  { label: "Construction Framing", href: "/services/framing" },
+  { label: "Roofing", href: "/services/roofing" },
+  { label: "Electrical", href: "/services/electrical" },
+  { label: "Garage Framing", href: "/services/framing" },
+  { label: "Basement Framing", href: "/services/framing" },
+  { label: "Seasonal Lighting", href: "/services/seasonal-lighting" },
 ];
 
 const quickLinks = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
+  { href: "/services", label: "Services" },
   { href: "/portfolio", label: "Portfolio" },
   { href: "/blog", label: "Blog" },
   { href: "/contact", label: "Contact" },
@@ -48,12 +49,12 @@ export default function Footer() {
             </h3>
             <ul role="list" className="space-y-1.5">
               {services.map((s) => (
-                <li key={s}>
+                <li key={s.label}>
                   <Link
-                    href="/contact"
+                    href={s.href}
                     className="text-sm hover:text-white transition-colors"
                   >
-                    {s}
+                    {s.label}
                   </Link>
                 </li>
               ))}
@@ -119,7 +120,12 @@ export default function Footer() {
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 text-xs text-slate-500 flex flex-col sm:flex-row justify-between gap-2">
           <p>&copy; {new Date().getFullYear()} WLG Homes. All rights reserved.</p>
-          <p>Saskatoon, SK, Canada</p>
+          <div className="flex gap-4">
+            <Link href="/privacy" className="hover:text-slate-300 transition-colors">
+              Privacy Policy
+            </Link>
+            <p>Saskatoon, SK, Canada</p>
+          </div>
         </div>
       </div>
     </footer>

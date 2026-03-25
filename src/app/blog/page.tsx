@@ -3,9 +3,24 @@ import BlogCard from "@/components/BlogCard";
 import { getAllPosts } from "@/lib/blog";
 
 export const metadata: Metadata = {
-  title: "Blog",
+  title: "Blog - Saskatoon Trades Tips & Guides",
   description:
     "Tips, guides, and news from the WLG Homes team — roofing advice, framing guides, electrical tips, and more for Saskatoon homeowners.",
+  alternates: { canonical: "https://wlghomes.ca/blog" },
+  openGraph: {
+    title: "Blog - Saskatoon Trades Tips & Guides",
+    description:
+      "Tips, guides, and news from the WLG Homes team — roofing advice, framing guides, electrical tips, and more for Saskatoon homeowners.",
+    url: "https://wlghomes.ca/blog",
+    images: [{ url: "/images/hero.png", width: 1200, height: 630, alt: "WLG Homes blog - Saskatoon trades tips" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Blog - Saskatoon Trades Tips & Guides",
+    description:
+      "Tips, guides, and news from the WLG Homes team — roofing advice, framing guides, electrical tips, and more for Saskatoon homeowners.",
+    images: ["/images/hero.png"],
+  },
 };
 
 export default function BlogPage() {

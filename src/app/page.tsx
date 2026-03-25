@@ -8,7 +8,63 @@ import { getAllPosts } from "@/lib/blog";
 export const metadata: Metadata = {
   title: "WLG Homes | Saskatoon Trades & Construction",
   description:
-    "WLG Homes — Saskatoon's expert trades team. Roofing, framing, electrical, renovations, garage & basement framing, and Christmas lighting. Get your free estimate today.",
+    "WLG Homes is Saskatoon's trusted trades team. Roofing, framing, electrical, and seasonal lighting. 45+ years of combined experience. Free estimates.",
+  alternates: { canonical: "https://wlghomes.ca" },
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "Do you offer free estimates?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes — we provide free, no-obligation estimates for all projects. Reach out through our contact form or give us a call and we'll schedule a time to visit your site.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Are you licensed and insured?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Absolutely. WLG Homes carries full liability insurance and our electricians are licensed with the Saskatchewan electrical authority. We pull all required permits so your project is fully compliant.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What areas do you serve?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "We are based in Saskatoon, SK and serve the greater Saskatoon area including surrounding communities. Contact us if you're unsure whether we cover your location.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "How long does a typical renovation take?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "It depends on the scope. A basement framing project can take 2-4 days depending on the size, while a full home renovation would completely depend on the scope of work. We'll give you a detailed timeline during your estimate.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Do you handle permits?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. We manage the permit process on your behalf for all work that requires it — including electrical, structural framing, and major renovations — so you don't have to deal with the paperwork.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What is your referral program?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Refer a friend or neighbour to WLG Homes and when that job is completed, you'll receive $150 off your next project. No limits — every referral counts.",
+      },
+    },
+  ],
 };
 
 const services = [
@@ -18,6 +74,7 @@ const services = [
       "Structural integrity starts here. We provide expert residential framing for new builds and additions.",
     img: "/images/framing.jpg",
     alt: "WLG Homes residential framing construction in Saskatoon",
+    href: "/services/framing",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.75} aria-hidden="true">
         <path strokeLinecap="round" strokeLinejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437 1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008Z" />
@@ -30,6 +87,7 @@ const services = [
       "Safe, efficient, and reliable electrical work for your home renovations and construction projects.",
     img: "/images/electrical.jpg",
     alt: "WLG Homes electrical panel installation by licensed electricians in Saskatoon",
+    href: "/services/electrical",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.75} aria-hidden="true">
         <path strokeLinecap="round" strokeLinejoin="round" d="m13 10 2-5-8 9h6l-2 5 8-9h-6Z" />
@@ -42,6 +100,7 @@ const services = [
       "High-quality roofing solutions designed to withstand the harsh Saskatchewan climate year-round.",
     img: "/images/roofing.jpg",
     alt: "WLG Homes crew removing old shingles during a roof replacement in Saskatoon",
+    href: "/services/roofing",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.75} aria-hidden="true">
         <path strokeLinecap="round" strokeLinejoin="round" d="m3 12 9-9 9 9M5 10v9a1 1 0 0 0 1 1h4v-4h4v4h4a1 1 0 0 0 1-1v-9" />
@@ -54,6 +113,7 @@ const services = [
       "Custom Christmas light installation to make your home shine during the holiday season.",
     img: "/images/christmas-lights.jpg",
     alt: "WLG Homes seasonal Christmas lighting installation on a Saskatoon home",
+    href: "/services/seasonal-lighting",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.75} aria-hidden="true">
         <path strokeLinecap="round" strokeLinejoin="round" d="M12 2a4 4 0 0 1 4 4c0 1.5-.8 2.8-2 3.5V11h-4V9.5A4 4 0 0 1 12 2ZM9 11h6v1a3 3 0 0 1-6 0v-1Zm3 4v4m0 0H9m3 0h3" />
@@ -67,7 +127,12 @@ export default function HomePage() {
 
   return (
     <>
-      {/* ── Hero ── */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+
+      {/* Hero */}
       <section
         className="relative flex items-center justify-center py-20 sm:py-28"
         aria-labelledby="hero-heading"
@@ -83,7 +148,6 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-[#1e2a3a]/65" aria-hidden="true" />
 
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
-          {/* Badge */}
           <p className="text-xs uppercase tracking-[0.2em] text-slate-300 font-semibold mb-5">
             45+ Years of Collective Trades Experience
           </p>
@@ -118,7 +182,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── About (Two-column) ── */}
+      {/* About (Two-column) */}
       <section className="py-20 bg-white" aria-labelledby="about-heading">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -177,7 +241,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── Services ── */}
+      {/* Services */}
       <section className="py-20 bg-[#f8fafc]" aria-labelledby="services-heading">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
@@ -198,7 +262,6 @@ export default function HomePage() {
                 key={s.title}
                 className="bg-white rounded-xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition-shadow flex flex-col"
               >
-                {/* Image */}
                 <div className="aspect-[4/3] relative">
                   <Image
                     src={s.img}
@@ -209,17 +272,16 @@ export default function HomePage() {
                     loading="lazy"
                   />
                 </div>
-                {/* Content */}
                 <div className="p-5 flex flex-col flex-1">
                   <div className="text-[#1e2a3a] mb-3">{s.icon}</div>
                   <h3 className="font-bold text-[#1e2a3a] text-base mb-2">{s.title}</h3>
                   <p className="text-blue-600 text-sm leading-relaxed mb-4">{s.description}</p>
                   <Link
-                    href="/portfolio"
+                    href={s.href}
                     className="mt-auto text-sm font-semibold text-[#1e2a3a] hover:text-blue-600 transition-colors inline-flex items-center gap-1"
-                    aria-label={`View portfolio for ${s.title}`}
+                    aria-label={`Learn more about ${s.title}`}
                   >
-                    View Portfolio <span aria-hidden="true">→</span>
+                    Learn More <span aria-hidden="true">→</span>
                   </Link>
                 </div>
               </article>
@@ -228,7 +290,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── FAQ ── */}
+      {/* FAQ */}
       <section className="py-20 bg-white" aria-labelledby="faq-heading">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-10">
@@ -243,7 +305,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── Referral ── */}
+      {/* Referral */}
       <section className="py-16 bg-blue-600 text-white" aria-labelledby="referral-heading">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
           <div className="text-4xl mb-4" aria-hidden="true">🤝</div>
@@ -264,7 +326,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── Blog Preview ── */}
+      {/* Blog Preview */}
       {posts.length > 0 && (
         <section className="py-20 bg-[#f8fafc]" aria-labelledby="blog-preview-heading">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -289,7 +351,7 @@ export default function HomePage() {
         </section>
       )}
 
-      {/* ── Final CTA ── */}
+      {/* Final CTA */}
       <section className="py-20 bg-[#1e2a3a] text-white text-center" aria-labelledby="cta-heading">
         <div className="max-w-2xl mx-auto px-4">
           <h2 id="cta-heading" className="text-3xl sm:text-4xl font-extrabold mb-4">

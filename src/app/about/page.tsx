@@ -3,9 +3,24 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "About Us",
+  title: "About WLG Homes - Saskatoon Trades Team",
   description:
     "Meet the WLG Homes team — Dawson Wiederhold, Riley Lajuenesse, and Braedon Gaudet. 45+ years of combined trades experience serving Saskatoon, SK.",
+  alternates: { canonical: "https://wlghomes.ca/about" },
+  openGraph: {
+    title: "About WLG Homes - Saskatoon Trades Team",
+    description:
+      "Meet the WLG Homes team — Dawson Wiederhold, Riley Lajuenesse, and Braedon Gaudet. 45+ years of combined trades experience serving Saskatoon, SK.",
+    url: "https://wlghomes.ca/about",
+    images: [{ url: "/images/hero.png", width: 1200, height: 630, alt: "WLG Homes team - Saskatoon trades contractors" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About WLG Homes - Saskatoon Trades Team",
+    description:
+      "Meet the WLG Homes team — Dawson Wiederhold, Riley Lajuenesse, and Braedon Gaudet. 45+ years of combined trades experience serving Saskatoon, SK.",
+    images: ["/images/hero.png"],
+  },
 };
 
 const team = [
@@ -32,9 +47,25 @@ const team = [
   },
 ];
 
+const teamSchema = {
+  "@context": "https://schema.org",
+  "@graph": team.map((member) => ({
+    "@type": "Person",
+    name: member.name,
+    jobTitle: member.role,
+    image: `https://wlghomes.ca${member.img}`,
+    worksFor: { "@type": "Organization", name: "WLG Homes" },
+  })),
+};
+
 export default function AboutPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(teamSchema) }}
+      />
+
       {/* Hero */}
       <section className="bg-[#1e2a3a] text-white py-20 px-4" aria-labelledby="about-hero-heading">
         <div className="max-w-3xl mx-auto text-center">
@@ -93,7 +124,37 @@ export default function AboutPage() {
         </div>
       </section>
 
-{/* CTA */}
+      {/* Meet the Team */}
+      <section className="py-16 bg-[#f8fafc]" aria-labelledby="team-heading">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6">
+          <h2 id="team-heading" className="text-3xl font-extrabold text-[#1e2a3a] mb-10 text-center">
+            Meet the Team
+          </h2>
+          <div className="grid sm:grid-cols-3 gap-8">
+            {team.map((member) => (
+              <article key={member.name} className="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden text-center">
+                <div className="aspect-square relative">
+                  <Image
+                    src={member.img}
+                    alt={member.alt}
+                    fill
+                    className="object-cover object-top"
+                    sizes="(max-width: 640px) 100vw, 33vw"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="p-5">
+                  <h3 className="font-extrabold text-[#1e2a3a] text-lg">{member.name}</h3>
+                  <p className="text-blue-600 text-sm font-semibold mb-3">{member.role}</p>
+                  <p className="text-slate-500 text-sm leading-relaxed">{member.bio}</p>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
       <section className="py-16 bg-blue-600 text-white text-center" aria-labelledby="about-cta-heading">
         <div className="max-w-xl mx-auto px-4">
           <h2 id="about-cta-heading" className="text-3xl font-extrabold mb-3">

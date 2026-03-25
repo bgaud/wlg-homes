@@ -2,9 +2,24 @@ import type { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
-  title: "Contact Us",
+  title: "Contact WLG Homes - Free Estimate Saskatoon",
   description:
     "Get in touch with WLG Homes in Saskatoon. Request a free estimate for roofing, framing, electrical, or renovation work. We respond within 1 business day.",
+  alternates: { canonical: "https://wlghomes.ca/contact" },
+  openGraph: {
+    title: "Contact WLG Homes - Free Estimate Saskatoon",
+    description:
+      "Get in touch with WLG Homes in Saskatoon. Request a free estimate for roofing, framing, electrical, or renovation work. We respond within 1 business day.",
+    url: "https://wlghomes.ca/contact",
+    images: [{ url: "/images/hero.png", width: 1200, height: 630, alt: "Contact WLG Homes - Saskatoon trades contractors" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact WLG Homes - Free Estimate Saskatoon",
+    description:
+      "Get in touch with WLG Homes in Saskatoon. Request a free estimate for roofing, framing, electrical, or renovation work. We respond within 1 business day.",
+    images: ["/images/hero.png"],
+  },
 };
 
 export default function ContactPage() {
@@ -42,6 +57,15 @@ export default function ContactPage() {
                   Saskatoon, SK, Canada
                 </p>
                 <p>
+                  <span className="font-semibold text-[#1e2a3a] block">Phone</span>
+                  <a
+                    href="tel:13062706616"
+                    className="text-blue-600 hover:underline"
+                  >
+                    1-306-270-6616
+                  </a>
+                </p>
+                <p>
                   <span className="font-semibold text-[#1e2a3a] block">Email</span>
                   <a
                     href="mailto:wlghomes2025@gmail.com"
@@ -62,7 +86,7 @@ export default function ContactPage() {
             </div>
 
             <div className="bg-blue-50 border border-blue-100 rounded-xl p-6">
-              <p className="text-blue-800 font-semibold text-sm mb-1">🤝 Referral Program</p>
+              <p className="text-blue-800 font-semibold text-sm mb-1">Referral Program</p>
               <p className="text-blue-700 text-sm">
                 Refer a job to WLG Homes and earn{" "}
                 <strong>$150 off</strong> your next project when their job is complete.

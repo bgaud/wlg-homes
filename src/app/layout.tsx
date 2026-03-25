@@ -38,9 +38,16 @@ export const metadata: Metadata = {
         url: "/images/hero.png",
         width: 1200,
         height: 630,
-        alt: "WLG Homes — Saskatoon Trades & Construction",
+        alt: "WLG Homes - Saskatoon Trades & Construction",
       },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "WLG Homes | Saskatoon Trades & Construction",
+    description:
+      "WLG Homes offers expert roofing, framing, electrical, and renovation services in Saskatoon, SK. 45+ years combined experience.",
+    images: ["/images/hero.png"],
   },
 };
 
@@ -57,8 +64,11 @@ const jsonLd = {
     addressRegion: "SK",
     addressCountry: "CA",
   },
+  telephone: "+13062706616",
   email: "wlghomes2025@gmail.com",
   url: "https://wlghomes.ca",
+  image: "https://wlghomes.ca/images/hero.png",
+  openingHours: ["Mo-Fr 07:00-18:00", "Sa 08:00-16:00"],
 };
 
 export default function RootLayout({

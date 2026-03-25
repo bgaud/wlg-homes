@@ -21,11 +21,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: post.title,
     description: post.excerpt,
+    alternates: { canonical: `https://wlghomes.ca/blog/${slug}` },
     openGraph: {
       title: post.title,
       description: post.excerpt,
       type: "article",
       url: `https://wlghomes.ca/blog/${slug}`,
+      images: [{ url: "/images/hero.png", width: 1200, height: 630, alt: post.title }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description: post.excerpt,
+      images: ["/images/hero.png"],
     },
   };
 }
@@ -46,8 +54,38 @@ export default async function BlogPostPage({ params }: Props) {
       })
     : "";
 
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: post.title,
+    description: post.excerpt,
+    image: "https://wlghomes.ca/images/hero.png",
+    url: `https://wlghomes.ca/blog/${slug}`,
+    datePublished: post.date || undefined,
+    dateModified: post.date || undefined,
+    author: {
+      "@type": "Organization",
+      name: "WLG Homes",
+      url: "https://wlghomes.ca",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "WLG Homes",
+      url: "https://wlghomes.ca",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://wlghomes.ca/images/logo.png",
+      },
+    },
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+
       <section className="bg-[#1e2a3a] text-white py-20 px-4" aria-labelledby="post-heading">
         <div className="max-w-3xl mx-auto">
           <Link
@@ -65,11 +103,18 @@ export default async function BlogPostPage({ params }: Props) {
           <h1 id="post-heading" className="text-3xl sm:text-4xl font-extrabold">
             {post.title}
           </h1>
+          <p className="text-slate-400 text-sm mt-2">By WLG Homes</p>
         </div>
       </section>
 
       <article className="py-16 bg-white" aria-labelledby="post-heading">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          {post.excerpt && (
+            <div className="bg-blue-50 border border-blue-100 rounded-lg p-5 mb-8">
+              <p className="text-blue-800 font-semibold text-sm uppercase tracking-wide mb-1">Summary</p>
+              <p className="text-blue-700 text-sm leading-relaxed">{post.excerpt}</p>
+            </div>
+          )}
           <div
             className="prose prose-lg prose-slate max-w-none
               prose-headings:text-[#1e2a3a] prose-headings:font-bold
