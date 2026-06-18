@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://wlghomes.ca"),
@@ -57,7 +58,11 @@ const jsonLd = {
   name: "WLG Homes",
   description:
     "Expert roofing, framing, electrical, and renovation services in Saskatoon, SK.",
-  areaServed: "Saskatoon",
+  areaServed: [
+    { "@type": "City", name: "Saskatoon" },
+    { "@type": "City", name: "Warman" },
+    { "@type": "City", name: "Martensville" },
+  ],
   address: {
     "@type": "PostalAddress",
     addressLocality: "Saskatoon",
@@ -70,8 +75,8 @@ const jsonLd = {
   image: "https://wlghomes.ca/images/hero.png",
   openingHours: ["Mo-Fr 07:00-18:00", "Sa 08:00-16:00"],
   sameAs: [
-    "https://share.google/u03WLiEyJxHnOhaKB",
     "https://www.facebook.com/profile.php?id=61584288716942",
+    // Add your Google Business Profile URL, Instagram, and LinkedIn here once set up
   ],
 };
 
@@ -97,6 +102,18 @@ export default function RootLayout({
         <Footer />
         <Analytics />
         <SpeedInsights />
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-DW7C7E4NT2"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-DW7C7E4NT2');
+          `}
+        </Script>
       </body>
     </html>
   );

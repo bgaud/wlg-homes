@@ -1,0 +1,290 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import { notFound } from "next/navigation";
+
+interface AreaData {
+  name: string;
+  city: string;
+  slug: string;
+  metaTitle: string;
+  metaDescription: string;
+  heroSubtitle: string;
+  intro: string;
+  context: string;
+  roofingNote: string;
+  electricalNote: string;
+  framingNote: string;
+}
+
+const areas: Record<string, AreaData> = {
+  stonebridge: {
+    name: "Stonebridge",
+    city: "Saskatoon",
+    slug: "stonebridge",
+    metaTitle: "Roofing, Framing & Electrical in Stonebridge Saskatoon - WLG Homes",
+    metaDescription:
+      "WLG Homes provides roofing, framing, electrical, and renovation services in Stonebridge, Saskatoon. Licensed trades. Free estimates. 306-270-6616.",
+    heroSubtitle:
+      "Serving Stonebridge homeowners with roofing, framing, electrical, and seasonal lighting. Free estimates, owners on every job.",
+    intro:
+      "Stonebridge is one of Saskatoon's largest and fastest-growing communities, with thousands of homes built between 2008 and today. WLG Homes works throughout Stonebridge on everything from roof replacements and basement framing to electrical panel upgrades and Christmas lighting installation.",
+    context:
+      "With so much of Stonebridge built in the 2010s, many roofs in the neighbourhood are now entering their first major lifecycle — shingles are hitting 10-15 years and showing signs of wear. It's also one of Saskatoon's most active areas for basement finishing, garage builds, and electrical upgrades as homeowners settle in and invest in their properties.",
+    roofingNote:
+      "Many Stonebridge homes were built with builder-grade shingles rated for 25 years but showing wear well before that in Saskatoon's climate. If your home was built between 2008 and 2015, it's worth having your roof assessed before the next winter.",
+    electricalNote:
+      "Stonebridge homes are generally well-wired, but demand for EV chargers, basement suite circuits, and hot tub installations is driving panel upgrades across the neighbourhood. WLG Homes handles 200A panel upgrades fully permitted through SaskPower.",
+    framingNote:
+      "Unfinished basements and single-car garages are common starting points in Stonebridge. We frame basements to permit-ready standards and handle full detached garage construction including coordination with your concrete contractor.",
+  },
+  evergreen: {
+    name: "Evergreen",
+    city: "Saskatoon",
+    slug: "evergreen",
+    metaTitle: "Roofing, Framing & Electrical in Evergreen Saskatoon - WLG Homes",
+    metaDescription:
+      "WLG Homes provides roofing, framing, electrical, and renovation services in Evergreen, Saskatoon. Licensed trades. Free estimates. 306-270-6616.",
+    heroSubtitle:
+      "Serving Evergreen homeowners with roofing, framing, electrical, and seasonal lighting. Free estimates, owners on every job.",
+    intro:
+      "Evergreen is a northwest Saskatoon neighbourhood that grew rapidly through the 2000s and 2010s. WLG Homes serves Evergreen homeowners for roofing, framing, electrical work, and seasonal Christmas lighting installation.",
+    context:
+      "Homes in Evergreen range from mid-2000s builds to newer construction, with a mix of single-family homes and semi-detached properties. Many are now at the stage where roofs need their first serious look, basements are being finished, and electrical systems are being upgraded to meet modern demands.",
+    roofingNote:
+      "Evergreen homes built in the mid-to-late 2000s are approaching the 15-20 year mark on their original shingles. Saskatchewan's freeze-thaw cycles are hard on asphalt shingles — if your roof is in that age range and showing granule loss or curling, it's worth a professional assessment before winter.",
+    electricalNote:
+      "Older panels in some of the earlier Evergreen builds may be undersized for today's loads. Whether you're adding circuits for a basement renovation, an EV charger, or a hot tub, WLG Homes handles the upgrade fully permitted with two Saskatchewan-licensed electricians on staff.",
+    framingNote:
+      "Basement finishing is one of the most common projects we do in Evergreen. We frame to permit-ready standards — perimeter walls, partition walls, soffits around mechanicals — and can coordinate the electrical rough-in to keep your project moving on schedule.",
+  },
+  warman: {
+    name: "Warman",
+    city: "Warman",
+    slug: "warman",
+    metaTitle: "Roofing, Framing & Electrical in Warman, SK - WLG Homes",
+    metaDescription:
+      "WLG Homes provides roofing, framing, electrical, and renovation services in Warman, SK. Licensed trades. Free estimates. 306-270-6616.",
+    heroSubtitle:
+      "Serving Warman homeowners with roofing, framing, electrical, and seasonal lighting. Free estimates from Saskatoon's trusted trades team.",
+    intro:
+      "WLG Homes serves Warman, SK for roofing, framing, electrical, and renovation work. Located just north of Saskatoon, Warman has grown significantly over the past decade and we make regular trips out for estimates and project work throughout the community.",
+    context:
+      "Warman is one of Saskatchewan's fastest-growing cities, with a large share of newer homes built in the last 10-15 years. That means lots of unfinished basements waiting to be developed, garages to build, and electrical work to support growing families who moved out from Saskatoon.",
+    roofingNote:
+      "Warman's newer homes are generally in good shape roofing-wise, but any home with a roof over 10 years old is worth having checked — especially after a hail event. WLG Homes provides free roofing assessments in Warman and can turn quotes around quickly.",
+    electricalNote:
+      "New construction electrical, panel upgrades, and EV charger installations are common requests we get from Warman homeowners. Everything is done to Saskatchewan electrical code, fully permitted, and inspected before we close walls.",
+    framingNote:
+      "We've done basement framing and garage construction projects throughout Warman. We handle the permit application with the City of Warman on your behalf and frame to inspection-ready standards.",
+  },
+  martensville: {
+    name: "Martensville",
+    city: "Martensville",
+    slug: "martensville",
+    metaTitle: "Roofing, Framing & Electrical in Martensville, SK - WLG Homes",
+    metaDescription:
+      "WLG Homes provides roofing, framing, electrical, and renovation services in Martensville, SK. Licensed trades. Free estimates. 306-270-6616.",
+    heroSubtitle:
+      "Serving Martensville homeowners with roofing, framing, electrical, and seasonal lighting. Free estimates from Saskatoon's trusted trades team.",
+    intro:
+      "WLG Homes serves Martensville, SK for roofing, framing, electrical work, and home renovations. Martensville is a short drive from Saskatoon and we regularly work in the community for homeowners who want a reliable trades team without the city premium.",
+    context:
+      "Martensville has seen steady residential growth over the past 15 years, with a mix of newer builds and homes from the late 2000s. The community attracts families looking for newer housing stock at more accessible prices, and many of those homeowners are now investing in basement development, garage builds, and home upgrades.",
+    roofingNote:
+      "Homes in Martensville from the late 2000s and early 2010s are entering the age range where a roofing assessment makes sense. WLG Homes can get out to Martensville for a free estimate and give you an honest read on whether your roof needs work before winter.",
+    electricalNote:
+      "Whether it's a panel upgrade to support an EV charger, electrical rough-in for a basement development, or new circuits for a workshop or garage, WLG Homes handles the full electrical scope in Martensville with proper permits through Saskatchewan's electrical authority.",
+    framingNote:
+      "Basement framing and detached garage construction are two of the most common projects we do in Martensville. We coordinate permits with the City of Martensville and frame to the National Building Code standards required for inspection sign-off.",
+  },
+};
+
+const services = [
+  { title: "Roofing", desc: "Asphalt shingle replacement, repairs, and new construction roofing.", href: "/services/roofing" },
+  { title: "Framing", desc: "Basement framing, garage construction, new builds, and additions.", href: "/services/framing" },
+  { title: "Electrical", desc: "Panel upgrades, residential wiring, and new construction electrical.", href: "/services/electrical" },
+  { title: "Renovations", desc: "Basement development, structural changes, and multi-trade remodels.", href: "/services/renovations" },
+  { title: "Seasonal Lighting", desc: "Christmas and holiday lighting installation and takedown.", href: "/services/seasonal-lighting" },
+];
+
+interface Props {
+  params: Promise<{ area: string }>;
+}
+
+export function generateStaticParams() {
+  return Object.keys(areas).map((area) => ({ area }));
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { area } = await params;
+  const data = areas[area];
+  if (!data) return {};
+  return {
+    title: data.metaTitle,
+    description: data.metaDescription,
+    alternates: { canonical: `https://wlghomes.ca/areas/${area}` },
+    openGraph: {
+      title: data.metaTitle,
+      description: data.metaDescription,
+      url: `https://wlghomes.ca/areas/${area}`,
+      images: [{ url: "/images/hero.png", width: 1200, height: 630, alt: `WLG Homes serving ${data.name}` }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: data.metaTitle,
+      description: data.metaDescription,
+      images: ["/images/hero.png"],
+    },
+  };
+}
+
+export default async function AreaPage({ params }: Props) {
+  const { area } = await params;
+  const data = areas[area];
+  if (!data) notFound();
+
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: `WLG Homes — Trades Services in ${data.name}`,
+    description: data.metaDescription,
+    provider: {
+      "@type": "LocalBusiness",
+      name: "WLG Homes",
+      url: "https://wlghomes.ca",
+      telephone: "+13062706616",
+    },
+    areaServed: { "@type": "City", name: data.city },
+    serviceType: "Roofing, Framing, Electrical, Renovations, Seasonal Lighting",
+  };
+
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+
+      {/* Hero */}
+      <section className="bg-[#1e2a3a] text-white py-20 px-4" aria-labelledby="area-heading">
+        <div className="max-w-3xl mx-auto text-center">
+          <p className="text-blue-400 text-sm font-semibold uppercase tracking-wider mb-3">WLG Homes</p>
+          <h1 id="area-heading" className="text-4xl sm:text-5xl font-extrabold mb-4">
+            Trades Services in {data.name}
+          </h1>
+          <p className="text-slate-300 text-lg mb-8">{data.heroSubtitle}</p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              href="/contact"
+              className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold px-8 py-4 rounded-md transition-colors"
+            >
+              Get a Free Estimate
+            </Link>
+            <a
+              href="tel:13062706616"
+              className="inline-block border-2 border-white/60 text-white hover:bg-white/10 font-semibold px-8 py-4 rounded-md transition-colors"
+            >
+              Call 306-270-6616
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Intro */}
+      <section className="py-16 bg-white">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <p className="text-slate-600 leading-relaxed mb-4 text-lg">{data.intro}</p>
+          <p className="text-slate-600 leading-relaxed">{data.context}</p>
+        </div>
+      </section>
+
+      {/* Services */}
+      <section className="py-16 bg-[#f8fafc]" aria-labelledby="area-services-heading">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6">
+          <h2 id="area-services-heading" className="text-2xl font-extrabold text-[#1e2a3a] mb-8 text-center">
+            Services We Offer in {data.name}
+          </h2>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {services.map((s) => (
+              <div key={s.title} className="bg-white rounded-xl border border-slate-200 p-6 shadow-sm flex flex-col">
+                <h3 className="font-bold text-[#1e2a3a] mb-2">{s.title}</h3>
+                <p className="text-slate-500 text-sm leading-relaxed mb-4 flex-1">{s.desc}</p>
+                <Link
+                  href={s.href}
+                  className="text-sm font-semibold text-blue-600 hover:underline"
+                >
+                  Learn more →
+                </Link>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Area-specific notes */}
+      <section className="py-16 bg-white" aria-labelledby="area-notes-heading">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 space-y-8">
+          <h2 id="area-notes-heading" className="text-2xl font-extrabold text-[#1e2a3a]">
+            What {data.name} Homeowners Typically Need
+          </h2>
+          <div>
+            <h3 className="font-bold text-[#1e2a3a] mb-2">Roofing</h3>
+            <p className="text-slate-600 leading-relaxed text-sm">{data.roofingNote}</p>
+          </div>
+          <div>
+            <h3 className="font-bold text-[#1e2a3a] mb-2">Electrical</h3>
+            <p className="text-slate-600 leading-relaxed text-sm">{data.electricalNote}</p>
+          </div>
+          <div>
+            <h3 className="font-bold text-[#1e2a3a] mb-2">Framing & Construction</h3>
+            <p className="text-slate-600 leading-relaxed text-sm">{data.framingNote}</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Trust */}
+      <section className="py-16 bg-[#f8fafc]" aria-labelledby="area-trust-heading">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <h2 id="area-trust-heading" className="text-2xl font-extrabold text-[#1e2a3a] mb-6">
+            Why {data.name} Homeowners Choose WLG Homes
+          </h2>
+          <ul className="space-y-4 text-slate-600 text-sm leading-relaxed">
+            <li className="flex gap-3">
+              <span className="text-blue-600 font-bold mt-0.5">✓</span>
+              <span><strong className="text-[#1e2a3a]">Owners on every job.</strong> You&rsquo;re hiring three experienced tradespeople — a lead framer and two licensed electricians — not a crew of subcontractors.</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-blue-600 font-bold mt-0.5">✓</span>
+              <span><strong className="text-[#1e2a3a]">Licensed and insured.</strong> Full liability insurance and Saskatchewan-licensed electricians on staff. All work is permitted where required and done to code.</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-blue-600 font-bold mt-0.5">✓</span>
+              <span><strong className="text-[#1e2a3a]">Free estimates.</strong> We visit your site in {data.name}, assess the scope in person, and give you a clear written quote. No pressure, no runaround.</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-blue-600 font-bold mt-0.5">✓</span>
+              <span><strong className="text-[#1e2a3a]">45+ years of combined experience.</strong> Between the three owners, we&rsquo;ve worked on hundreds of residential projects across the Saskatoon area.</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="py-16 bg-blue-600 text-white text-center" aria-labelledby="area-cta-heading">
+        <div className="max-w-2xl mx-auto px-4">
+          <h2 id="area-cta-heading" className="text-3xl font-extrabold mb-4">
+            Get a Free Estimate in {data.name}
+          </h2>
+          <p className="text-blue-100 text-lg mb-8">
+            Roofing, framing, electrical, or seasonal lighting — we&rsquo;ll come to your property in {data.name}, assess the scope, and give you a straight answer on cost.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/contact" className="inline-block bg-white text-blue-700 hover:bg-blue-50 font-bold px-7 py-3.5 rounded-md transition-colors">
+              Contact Us
+            </Link>
+            <Link href="/areas" className="inline-block border-2 border-white/60 text-white hover:bg-white/10 font-semibold px-7 py-3.5 rounded-md transition-colors">
+              All Service Areas
+            </Link>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}

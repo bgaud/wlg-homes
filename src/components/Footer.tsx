@@ -20,11 +20,18 @@ const quickLinks = [
   { href: "/contact", label: "Contact" },
 ];
 
+const areaLinks = [
+  { href: "/areas/stonebridge", label: "Stonebridge" },
+  { href: "/areas/evergreen", label: "Evergreen" },
+  { href: "/areas/warman", label: "Warman" },
+  { href: "/areas/martensville", label: "Martensville" },
+];
+
 export default function Footer() {
   return (
     <footer className="bg-[#1e2a3a] text-slate-300" role="contentinfo">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
           {/* Col 1: Brand */}
           <div className="flex flex-col items-start">
             <Link href="/" aria-label="WLG Homes — go to homepage">
@@ -80,7 +87,26 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Col 4: Contact */}
+          {/* Col 4: Areas */}
+          <div>
+            <h3 className="text-white font-semibold mb-3 text-sm uppercase tracking-wider">
+              Areas We Serve
+            </h3>
+            <ul role="list" className="space-y-1.5">
+              {areaLinks.map(({ href, label }) => (
+                <li key={href}>
+                  <Link
+                    href={href}
+                    className="text-sm hover:text-white transition-colors"
+                  >
+                    {label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Col 5: Contact */}
           <div>
             <h3 className="text-white font-semibold mb-3 text-sm uppercase tracking-wider">
               Contact
