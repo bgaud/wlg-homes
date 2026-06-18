@@ -61,7 +61,7 @@ const faqSchema = {
       name: "What is your referral program?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Refer a friend or neighbour to WLG Homes and when that job is completed, you'll receive $150 off your next project. No limits — every referral counts.",
+        text: "Refer a friend or neighbour to WLG Homes and when that job is completed, you'll receive up to $150 cash upon payment. No limits — every referral counts.",
       },
     },
   ],
@@ -315,7 +315,7 @@ export default function HomePage() {
           <p className="text-blue-100 text-lg mb-6 max-w-xl mx-auto">
             Know someone who needs a roofer, framer, or electrician in Saskatoon?
             Refer them to WLG Homes and once their job is complete,{" "}
-            <strong className="text-white">you get $150 off your next project.</strong>
+            <strong className="text-white">you get up to $150 cash.</strong>
           </p>
           <Link
             href="/contact"

@@ -89,7 +89,7 @@ export default function ContactPage() {
               <p className="text-blue-800 font-semibold text-sm mb-1">Referral Program</p>
               <p className="text-blue-700 text-sm">
                 Refer a job to WLG Homes and earn{" "}
-                <strong>$150 off</strong> your next project when their job is complete.
+                <strong>up to $150 cash</strong> upon payment when their job is complete.
               </p>
             </div>
           </aside>

@@ -25,7 +25,7 @@ const faqs = [
   },
   {
     q: "What is your referral program?",
-    a: "Refer a friend or neighbour to WLG Homes and when that job is completed, you'll receive $150 off your next project. No limits — every referral counts.",
+    a: "Refer a friend or neighbour to WLG Homes and when that job is completed, you'll receive up to $150 cash upon payment. No limits — every referral counts.",
   },
 ];
 
