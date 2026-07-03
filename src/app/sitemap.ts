@@ -20,10 +20,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/referral`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/privacy`, lastModified: new Date(), changeFrequency: "yearly", priority: 0.3 },
     { url: `${base}/areas`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/areas/saskatoon`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.85 },
     { url: `${base}/areas/stonebridge`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.75 },
     { url: `${base}/areas/evergreen`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.75 },
     { url: `${base}/areas/warman`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.75 },
     { url: `${base}/areas/martensville`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.75 },
+    { url: `${base}/areas/delisle`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
+    { url: `${base}/areas/prince-albert`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
   ];
 
   const blogRoutes: MetadataRoute.Sitemap = posts.map((post) => ({

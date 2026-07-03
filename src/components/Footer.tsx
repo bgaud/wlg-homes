@@ -22,10 +22,13 @@ const quickLinks = [
 ];
 
 const areaLinks = [
-  { href: "/areas/stonebridge", label: "Stonebridge" },
-  { href: "/areas/evergreen", label: "Evergreen" },
+  { href: "/areas/saskatoon", label: "Saskatoon" },
+  { href: "/areas/stonebridge", label: "Stonebridge (Saskatoon)" },
+  { href: "/areas/evergreen", label: "Evergreen (Saskatoon)" },
   { href: "/areas/warman", label: "Warman" },
   { href: "/areas/martensville", label: "Martensville" },
+  { href: "/areas/delisle", label: "Delisle" },
+  { href: "/areas/prince-albert", label: "Prince Albert" },
 ];
 
 export default function Footer() {

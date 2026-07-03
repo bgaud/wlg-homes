@@ -62,6 +62,8 @@ const jsonLd = {
     { "@type": "City", name: "Saskatoon" },
     { "@type": "City", name: "Warman" },
     { "@type": "City", name: "Martensville" },
+    { "@type": "City", name: "Delisle" },
+    { "@type": "City", name: "Prince Albert" },
   ],
   address: {
     "@type": "PostalAddress",
