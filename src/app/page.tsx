@@ -229,8 +229,8 @@ export default function HomePage() {
               </div>
               <div className="rounded-xl overflow-hidden aspect-[4/5] mt-8">
                 <Image
-                  src="/images/framing.jpg"
-                  alt="Framing construction in progress"
+                  src="/images/garage-siding-installation.jpg"
+                  alt="WLG Homes crew installing siding on a Saskatoon garage build"
                   width={400}
                   height={500}
                   className="w-full h-full object-cover"
