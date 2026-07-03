@@ -17,46 +17,6 @@ interface AreaData {
 }
 
 const areas: Record<string, AreaData> = {
-  stonebridge: {
-    name: "Stonebridge",
-    city: "Saskatoon",
-    slug: "stonebridge",
-    metaTitle: "Roofing, Framing & Electrical in Stonebridge Saskatoon - WLG Homes",
-    metaDescription:
-      "WLG Homes provides roofing, framing, electrical, and renovation services in Stonebridge, Saskatoon. Licensed trades. Free estimates. 306-270-6616.",
-    heroSubtitle:
-      "Serving Stonebridge homeowners with roofing, framing, electrical, and seasonal lighting. Free estimates, owners on every job.",
-    intro:
-      "Stonebridge is one of Saskatoon's largest and fastest-growing communities, with thousands of homes built between 2008 and today. WLG Homes works throughout Stonebridge on everything from roof replacements and basement framing to electrical panel upgrades and Christmas lighting installation.",
-    context:
-      "With so much of Stonebridge built in the 2010s, many roofs in the neighbourhood are now entering their first major lifecycle — shingles are hitting 10-15 years and showing signs of wear. It's also one of Saskatoon's most active areas for basement finishing, garage builds, and electrical upgrades as homeowners settle in and invest in their properties.",
-    roofingNote:
-      "Many Stonebridge homes were built with builder-grade shingles rated for 25 years but showing wear well before that in Saskatoon's climate. If your home was built between 2008 and 2015, it's worth having your roof assessed before the next winter.",
-    electricalNote:
-      "Stonebridge homes are generally well-wired, but demand for EV chargers, basement suite circuits, and hot tub installations is driving panel upgrades across the neighbourhood. WLG Homes handles 200A panel upgrades fully permitted through SaskPower.",
-    framingNote:
-      "Unfinished basements and single-car garages are common starting points in Stonebridge. We frame basements to permit-ready standards and handle full detached garage construction including coordination with your concrete contractor.",
-  },
-  evergreen: {
-    name: "Evergreen",
-    city: "Saskatoon",
-    slug: "evergreen",
-    metaTitle: "Roofing, Framing & Electrical in Evergreen Saskatoon - WLG Homes",
-    metaDescription:
-      "WLG Homes provides roofing, framing, electrical, and renovation services in Evergreen, Saskatoon. Licensed trades. Free estimates. 306-270-6616.",
-    heroSubtitle:
-      "Serving Evergreen homeowners with roofing, framing, electrical, and seasonal lighting. Free estimates, owners on every job.",
-    intro:
-      "Evergreen is a northwest Saskatoon neighbourhood that grew rapidly through the 2000s and 2010s. WLG Homes serves Evergreen homeowners for roofing, framing, electrical work, and seasonal Christmas lighting installation.",
-    context:
-      "Homes in Evergreen range from mid-2000s builds to newer construction, with a mix of single-family homes and semi-detached properties. Many are now at the stage where roofs need their first serious look, basements are being finished, and electrical systems are being upgraded to meet modern demands.",
-    roofingNote:
-      "Evergreen homes built in the mid-to-late 2000s are approaching the 15-20 year mark on their original shingles. Saskatchewan's freeze-thaw cycles are hard on asphalt shingles — if your roof is in that age range and showing granule loss or curling, it's worth a professional assessment before winter.",
-    electricalNote:
-      "Older panels in some of the earlier Evergreen builds may be undersized for today's loads. Whether you're adding circuits for a basement renovation, an EV charger, or a hot tub, WLG Homes handles the upgrade fully permitted with two Saskatchewan-licensed electricians on staff.",
-    framingNote:
-      "Basement finishing is one of the most common projects we do in Evergreen. We frame to permit-ready standards — perimeter walls, partition walls, soffits around mechanicals — and can coordinate the electrical rough-in to keep your project moving on schedule.",
-  },
   warman: {
     name: "Warman",
     city: "Warman",
