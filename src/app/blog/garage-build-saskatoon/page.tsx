@@ -137,15 +137,9 @@ export default function GarageBuildPage() {
             <p>
               The homeowners came out throughout the day to check progress. They were the kind of clients who asked good questions and actually listened to the answers. We walked them through what we were doing and why at each step, and they were genuinely interested in understanding the build. Those conversations make the day go faster.
             </p>
-
-            <h2>Day Two: House Wrap, Siding, and Shingles</h2>
-
-            <p>
-              Day two was about closing the building in. We came back to a fully framed garage - all we had to do was make it weather-tight and finished.
-            </p>
           </div>
 
-          {/* Photos 2+3: Roof framing exterior + interior */}
+          {/* Photos 2+3: Roof deck and interior - end of day one */}
           <div className="grid sm:grid-cols-2 gap-4 my-10">
             <figure>
               <div className="relative w-full rounded-xl overflow-hidden" style={{ aspectRatio: "3/4" }}>
@@ -175,6 +169,14 @@ export default function GarageBuildPage() {
                 Looking up from inside - clean span, solid structure.
               </figcaption>
             </figure>
+          </div>
+
+          <div className="prose prose-lg prose-slate max-w-none prose-headings:text-[#1e2a3a] prose-headings:font-bold prose-h2:text-2xl prose-h2:mt-10 prose-h2:mb-4 prose-p:text-slate-600 prose-p:leading-relaxed prose-p:mb-5 prose-strong:text-[#1e2a3a]">
+            <h2>Day Two: House Wrap, Siding, and Shingles</h2>
+
+            <p>
+              Day two was about closing the building in. We came back to a fully framed garage - all we had to do was make it weather-tight and finished.
+            </p>
           </div>
 
           <div className="prose prose-lg prose-slate max-w-none prose-headings:text-[#1e2a3a] prose-headings:font-bold prose-h2:text-2xl prose-h2:mt-10 prose-h2:mb-4 prose-p:text-slate-600 prose-p:leading-relaxed prose-p:mb-5 prose-strong:text-[#1e2a3a]">
