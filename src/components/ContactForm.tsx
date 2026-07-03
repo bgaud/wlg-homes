@@ -142,6 +142,14 @@ export default function ContactForm() {
       >
         {status === "loading" ? "Sending…" : "Send Message"}
       </button>
+
+      <p className="text-xs text-slate-400 text-center">
+        By submitting this form, you agree to our{" "}
+        <a href="/privacy" className="underline hover:text-slate-600 transition-colors">
+          Privacy Policy
+        </a>
+        . We use your information only to respond to your enquiry.
+      </p>
     </form>
   );
 }

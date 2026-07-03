@@ -54,7 +54,7 @@ export const metadata: Metadata = {
 
 const jsonLd = {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
+  "@type": ["LocalBusiness", "GeneralContractor"],
   name: "WLG Homes",
   description:
     "Expert roofing, framing, electrical, and renovation services in Saskatoon, SK.",
@@ -71,12 +71,13 @@ const jsonLd = {
   },
   telephone: "+13062706616",
   email: "wlghomes2025@gmail.com",
+  priceRange: "$$",
   url: "https://wlghomes.ca",
   image: "https://wlghomes.ca/images/hero.png",
   openingHours: ["Mo-Fr 07:00-18:00", "Sa 08:00-16:00"],
   sameAs: [
     "https://www.facebook.com/profile.php?id=61584288716942",
-    // Add your Google Business Profile URL, Instagram, and LinkedIn here once set up
+    "https://www.google.com/maps/place/WLG+Homes/@52.2379344,-106.6449313,9z/data=!3m1!4b1!4m6!3m5!1s0x2c693299ff943e9d:0xeed9c522fc9ab8bc!8m2!3d52.2379344!4d-106.6449313!16s%2Fg%2F11z1jxd2j4",
   ],
 };
 

@@ -28,7 +28,7 @@ const serviceSchema = {
   "@type": "Service",
   name: "Residential Framing & Construction",
   description: "New build framing, basement framing, and garage construction in Saskatoon, SK.",
-  provider: { "@type": "LocalBusiness", name: "WLG Homes", url: "https://wlghomes.ca" },
+  provider: { "@type": "LocalBusiness", name: "WLG Homes", url: "https://wlghomes.ca", telephone: "+13062706616" },
   areaServed: "Saskatoon",
   serviceType: "Framing & Construction",
 };

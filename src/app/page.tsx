@@ -108,15 +108,15 @@ const services = [
     ),
   },
   {
-    title: "Seasonal Lighting",
+    title: "Full Builds",
     description:
-      "Custom Christmas light installation to make your home shine during the holiday season.",
-    img: "/images/christmas-lights.jpg",
-    alt: "WLG Homes seasonal Christmas lighting installation on a Saskatoon home",
-    href: "/services/seasonal-lighting",
+      "Complete garage and structure builds from the concrete pad up — framing, siding, roofing, and electrical all under one crew.",
+    img: "/images/garage-build/06-siding-progress.jpg",
+    alt: "WLG Homes crew building a full detached garage in Saskatoon — siding installation in progress",
+    href: "/blog/garage-build-saskatoon",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.75} aria-hidden="true">
-        <path strokeLinecap="round" strokeLinejoin="round" d="M12 2a4 4 0 0 1 4 4c0 1.5-.8 2.8-2 3.5V11h-4V9.5A4 4 0 0 1 12 2ZM9 11h6v1a3 3 0 0 1-6 0v-1Zm3 4v4m0 0H9m3 0h3" />
+        <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Z" />
       </svg>
     ),
   },

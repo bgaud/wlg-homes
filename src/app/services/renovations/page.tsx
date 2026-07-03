@@ -27,7 +27,7 @@ const serviceSchema = {
   "@type": "Service",
   name: "Home Renovation Services",
   description: "Residential renovation services including basement development, structural work, and full-scope remodels in Saskatoon, SK.",
-  provider: { "@type": "LocalBusiness", name: "WLG Homes", url: "https://wlghomes.ca" },
+  provider: { "@type": "LocalBusiness", name: "WLG Homes", url: "https://wlghomes.ca", telephone: "+13062706616" },
   areaServed: "Saskatoon",
   serviceType: "Home Renovation",
 };

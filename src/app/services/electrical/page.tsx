@@ -28,7 +28,7 @@ const serviceSchema = {
   "@type": "Service",
   name: "Licensed Electrical Services",
   description: "Residential electrical panel upgrades, wiring, and new construction electrical in Saskatoon, SK.",
-  provider: { "@type": "LocalBusiness", name: "WLG Homes", url: "https://wlghomes.ca" },
+  provider: { "@type": "LocalBusiness", name: "WLG Homes", url: "https://wlghomes.ca", telephone: "+13062706616" },
   areaServed: "Saskatoon",
   serviceType: "Electrical",
 };

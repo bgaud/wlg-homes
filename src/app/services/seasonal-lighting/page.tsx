@@ -28,7 +28,7 @@ const serviceSchema = {
   "@type": "Service",
   name: "Professional Christmas Lighting Installation",
   description: "Holiday and Christmas lighting installation, maintenance, and takedown for homes in Saskatoon, SK.",
-  provider: { "@type": "LocalBusiness", name: "WLG Homes", url: "https://wlghomes.ca" },
+  provider: { "@type": "LocalBusiness", name: "WLG Homes", url: "https://wlghomes.ca", telephone: "+13062706616" },
   areaServed: "Saskatoon",
   serviceType: "Seasonal Lighting",
 };

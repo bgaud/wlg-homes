@@ -57,9 +57,16 @@ export default function Header() {
                 </Link>
               );
             })}
+            <a
+              href="tel:13062706616"
+              className="text-slate-300 hover:text-white text-sm font-medium transition-colors"
+              aria-label="Call WLG Homes at 306-270-6616"
+            >
+              306-270-6616
+            </a>
             <Link
               href="/contact"
-              className="ml-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-4 py-2 rounded-md transition-colors"
+              className="bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-4 py-2 rounded-md transition-colors"
             >
               Get a Quote
             </Link>
@@ -119,6 +126,15 @@ export default function Header() {
                 </li>
               );
             })}
+            <li>
+              <a
+                href="tel:13062706616"
+                className="block px-3 py-2 rounded-md text-sm font-medium text-slate-300 hover:bg-white/10 hover:text-white"
+                aria-label="Call WLG Homes at 306-270-6616"
+              >
+                Call: 306-270-6616
+              </a>
+            </li>
             <li>
               <Link
                 href="/contact"

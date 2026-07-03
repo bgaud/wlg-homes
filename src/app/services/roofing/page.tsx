@@ -28,7 +28,7 @@ const serviceSchema = {
   "@type": "Service",
   name: "Professional Roofing Services",
   description: "Asphalt shingle replacement, roof repairs, and new roof construction in Saskatoon, SK.",
-  provider: { "@type": "LocalBusiness", name: "WLG Homes", url: "https://wlghomes.ca" },
+  provider: { "@type": "LocalBusiness", name: "WLG Homes", url: "https://wlghomes.ca", telephone: "+13062706616" },
   areaServed: "Saskatoon",
   serviceType: "Roofing",
 };
