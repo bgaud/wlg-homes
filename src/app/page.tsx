@@ -21,7 +21,7 @@ const faqSchema = {
       name: "Do you offer free estimates?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes — we provide free, no-obligation estimates for all projects. Reach out through our contact form or give us a call and we'll schedule a time to visit your site.",
+        text: "Yes - we provide free, no-obligation estimates for all projects. Reach out through our contact form or give us a call and we'll schedule a time to visit your site.",
       },
     },
     {
@@ -53,7 +53,7 @@ const faqSchema = {
       name: "Do you handle permits?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. We manage the permit process on your behalf for all work that requires it — including electrical, structural framing, and major renovations — so you don't have to deal with the paperwork.",
+        text: "Yes. We manage the permit process on your behalf for all work that requires it - including electrical, structural framing, and major renovations - so you don't have to deal with the paperwork.",
       },
     },
     {
@@ -61,7 +61,7 @@ const faqSchema = {
       name: "What is your referral program?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Refer a friend or neighbour to WLG Homes and when that job is completed, you'll receive up to $150 cash upon payment. No limits — every referral counts.",
+        text: "Refer a friend or neighbour to WLG Homes and when that job is completed, you'll receive up to $150 cash upon payment. No limits - every referral counts.",
       },
     },
   ],
@@ -110,9 +110,9 @@ const services = [
   {
     title: "Full Builds",
     description:
-      "Complete garage and structure builds from the concrete pad up — framing, siding, roofing, and electrical all under one crew.",
+      "Complete garage and structure builds from the concrete pad up - framing, siding, roofing, and electrical all under one crew.",
     img: "/images/garage-build/06-siding-progress.jpg",
-    alt: "WLG Homes crew building a full detached garage in Saskatoon — siding installation in progress",
+    alt: "WLG Homes crew building a full detached garage in Saskatoon - siding installation in progress",
     href: "/blog/garage-build-saskatoon",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.75} aria-hidden="true">
@@ -199,14 +199,14 @@ export default function HomePage() {
               <p className="text-slate-600 mb-4 leading-relaxed">
                 WLG Homes was founded by 3 guys that did a lot of work for friends and
                 family and decided to turn it into a business venture. Three experienced
-                tradespeople — a Carpenter and 2 Licensed Electricians — with a combined
+                tradespeople - a Carpenter and 2 Licensed Electricians - with a combined
                 45+ years in the industry. We&rsquo;ve built our reputation in Saskatoon on
                 quality workmanship, honest pricing, and showing up when we say we will.
               </p>
               <p className="text-slate-600 mb-6 leading-relaxed">
                 We handle everything from construction framing and roofing to
                 electrical panel upgrades, basement framing, garage builds, and
-                seasonal lighting — all under one roof. No subcontracting surprises,
+                seasonal lighting - all under one roof. No subcontracting surprises,
                 no runaround.
               </p>
               <Link
@@ -358,7 +358,7 @@ export default function HomePage() {
             Get a Quote Today
           </h2>
           <p className="text-slate-300 text-lg mb-8">
-            Ready to start your project? Our Saskatoon team is ready to help — no
+            Ready to start your project? Our Saskatoon team is ready to help - no
             obligation, just honest advice and a fair price.
           </p>
           <Link

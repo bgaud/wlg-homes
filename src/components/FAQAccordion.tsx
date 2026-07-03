@@ -5,7 +5,7 @@ import { useState } from "react";
 const faqs = [
   {
     q: "Do you offer free estimates?",
-    a: "Yes — we provide free, no-obligation estimates for all projects. Reach out through our contact form or give us a call and we'll schedule a time to visit your site.",
+    a: "Yes - we provide free, no-obligation estimates for all projects. Reach out through our contact form or give us a call and we'll schedule a time to visit your site.",
   },
   {
     q: "Are you licensed and insured?",
@@ -21,11 +21,11 @@ const faqs = [
   },
   {
     q: "Do you handle permits?",
-    a: "Yes. We manage the permit process on your behalf for all work that requires it — including electrical, structural framing, and major renovations — so you don't have to deal with the paperwork.",
+    a: "Yes. We manage the permit process on your behalf for all work that requires it - including electrical, structural framing, and major renovations - so you don't have to deal with the paperwork.",
   },
   {
     q: "What is your referral program?",
-    a: "Refer a friend or neighbour to WLG Homes and when that job is completed, you'll receive up to $150 cash upon payment. No limits — every referral counts.",
+    a: "Refer a friend or neighbour to WLG Homes and when that job is completed, you'll receive up to $150 cash upon payment. No limits - every referral counts.",
   },
 ];
 

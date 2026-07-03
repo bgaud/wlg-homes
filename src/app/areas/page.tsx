@@ -89,7 +89,7 @@ export default function AreasPage() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
           <h2 className="text-xl font-extrabold text-[#1e2a3a] mb-3">Don&rsquo;t See Your Area?</h2>
           <p className="text-slate-600 text-sm leading-relaxed mb-6">
-            We work throughout Saskatoon and the surrounding region. If you&rsquo;re not sure whether we cover your location, give us a call or send a message — we&rsquo;ll let you know quickly.
+            We work throughout Saskatoon and the surrounding region. If you&rsquo;re not sure whether we cover your location, give us a call or send a message - we&rsquo;ll let you know quickly.
           </p>
           <Link
             href="/contact"

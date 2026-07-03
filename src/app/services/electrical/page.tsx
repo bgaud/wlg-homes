@@ -36,7 +36,7 @@ const serviceSchema = {
 const faqs = [
   {
     q: "Are your electricians licensed in Saskatchewan?",
-    a: "Yes. WLG Homes has two Saskatchewan-licensed electricians on staff — Riley Lajuenesse and Braedon Gaudet. All electrical work is done by licensed trades and fully permitted.",
+    a: "Yes. WLG Homes has two Saskatchewan-licensed electricians on staff - Riley Lajuenesse and Braedon Gaudet. All electrical work is done by licensed trades and fully permitted.",
   },
   {
     q: "Do I need a permit for an electrical panel upgrade?",
@@ -106,8 +106,8 @@ export default function ElectricalPage() {
               Saskatoon Electrical Work Done by the Book
             </h2>
             <p className="text-slate-600 leading-relaxed mb-4">
-              WLG Homes has two Saskatchewan-licensed electricians — Riley Lajuenesse and
-              Braedon Gaudet — with decades of combined residential and commercial experience.
+              WLG Homes has two Saskatchewan-licensed electricians - Riley Lajuenesse and
+              Braedon Gaudet - with decades of combined residential and commercial experience.
               Every electrical job we take on is fully permitted and inspected.
             </p>
             <p className="text-slate-600 leading-relaxed mb-4">
@@ -134,7 +134,7 @@ export default function ElectricalPage() {
               { title: "Panel Upgrades (100A to 200A)", desc: "Upgrade your electrical service to handle modern loads. Required for EV chargers, hot tubs, basement suites, and major renovations. Fully permitted." },
               { title: "Residential Wiring", desc: "New circuits, outlet additions, light fixture installation, and general home wiring for renovations and upgrades." },
               { title: "New Construction Electrical", desc: "Complete rough-in and trim for new builds, garages, and additions. We work with your schedule and coordinate with other trades on site." },
-              { title: "Basement Suite Electrical", desc: "Dedicated circuits, panel capacity assessment, and full wiring for basement suite or secondary suite conversions — done to code." },
+              { title: "Basement Suite Electrical", desc: "Dedicated circuits, panel capacity assessment, and full wiring for basement suite or secondary suite conversions - done to code." },
             ].map((item) => (
               <div key={item.title} className="bg-white rounded-xl border border-slate-200 p-6 shadow-sm">
                 <h3 className="font-bold text-[#1e2a3a] mb-2">{item.title}</h3>

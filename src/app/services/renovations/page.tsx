@@ -35,7 +35,7 @@ const serviceSchema = {
 const faqs = [
   {
     q: "What types of renovations do you take on?",
-    a: "WLG Homes handles renovations that draw on our core trades — framing, electrical, and roofing. This includes basement developments, garage conversions, structural changes, and multi-trade remodels where we manage the scope.",
+    a: "WLG Homes handles renovations that draw on our core trades - framing, electrical, and roofing. This includes basement developments, garage conversions, structural changes, and multi-trade remodels where we manage the scope.",
   },
   {
     q: "Do you use subcontractors?",
@@ -94,8 +94,8 @@ export default function RenovationsPage() {
             Renovations Done by the Owners
           </h2>
           <p className="text-slate-600 leading-relaxed mb-4">
-            WLG Homes brings together three experienced tradespeople — a lead framer and two
-            licensed electricians — to handle renovation projects that require real expertise,
+            WLG Homes brings together three experienced tradespeople - a lead framer and two
+            licensed electricians - to handle renovation projects that require real expertise,
             not a coordinated mess of subcontractors who don&rsquo;t talk to each other.
           </p>
           <p className="text-slate-600 leading-relaxed mb-4">

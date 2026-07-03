@@ -5,12 +5,12 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Portfolio - Roofing, Framing & Electrical Projects Saskatoon",
   description:
-    "Browse WLG Homes' portfolio of completed projects in Saskatoon — framing, roofing, electrical, basement renovations, garage builds, and Christmas lighting.",
+    "Browse WLG Homes' portfolio of completed projects in Saskatoon - framing, roofing, electrical, basement renovations, garage builds, and Christmas lighting.",
   alternates: { canonical: "https://wlghomes.ca/portfolio" },
   openGraph: {
     title: "Portfolio - Roofing, Framing & Electrical Projects Saskatoon",
     description:
-      "Browse WLG Homes' portfolio of completed projects in Saskatoon — framing, roofing, electrical, basement renovations, garage builds, and Christmas lighting.",
+      "Browse WLG Homes' portfolio of completed projects in Saskatoon - framing, roofing, electrical, basement renovations, garage builds, and Christmas lighting.",
     url: "https://wlghomes.ca/portfolio",
     images: [{ url: "/images/hero.png", width: 1200, height: 630, alt: "WLG Homes completed projects in Saskatoon" }],
   },
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Portfolio - Roofing, Framing & Electrical Projects Saskatoon",
     description:
-      "Browse WLG Homes' portfolio of completed projects in Saskatoon — framing, roofing, electrical, basement renovations, garage builds, and Christmas lighting.",
+      "Browse WLG Homes' portfolio of completed projects in Saskatoon - framing, roofing, electrical, basement renovations, garage builds, and Christmas lighting.",
     images: ["/images/hero.png"],
   },
 };
@@ -49,7 +49,7 @@ const projects = [
     alt: "Electrical panel upgrade installation",
   },
   {
-    title: "Asphalt Shingle Roof Replacement — Bi-Level",
+    title: "Asphalt Shingle Roof Replacement - Bi-Level",
     category: "Roofing",
     description:
       "Full tear-off and asphalt shingle replacement on a 1,500 sqft bi-level in Saskatoon. Clean installation with new underlayment and drip edge throughout.",

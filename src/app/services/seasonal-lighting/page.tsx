@@ -77,7 +77,7 @@ export default function SeasonalLightingPage() {
           </h1>
           <p className="text-slate-300 text-lg mb-8">
             Professional holiday lighting installed, maintained, and taken down by WLG Homes.
-            No ladders, no hassle — just a lit-up home for the season.
+            No ladders, no hassle - just a lit-up home for the season.
           </p>
           <Link
             href="/contact"
@@ -107,8 +107,8 @@ export default function SeasonalLightingPage() {
             </h2>
             <p className="text-slate-600 leading-relaxed mb-4">
               Getting on a ladder in a Saskatoon winter to hang Christmas lights is a task
-              best left to professionals. WLG Homes handles the full install — roofline lighting,
-              tree wrapping, and any other areas you want covered — safely and efficiently.
+              best left to professionals. WLG Homes handles the full install - roofline lighting,
+              tree wrapping, and any other areas you want covered - safely and efficiently.
             </p>
             <p className="text-slate-600 leading-relaxed mb-4">
               We use quality commercial-grade LED lights that hold up through cold weather

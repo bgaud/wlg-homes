@@ -24,7 +24,7 @@ export default function Header() {
           {/* Logo */}
           <Link
             href="/"
-            aria-label="WLG Homes — go to homepage"
+            aria-label="WLG Homes - go to homepage"
             className="flex items-center"
           >
             <Image

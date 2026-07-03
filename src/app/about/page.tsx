@@ -5,12 +5,12 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "About WLG Homes - Saskatoon Trades Team",
   description:
-    "Meet the WLG Homes team — Dawson Wiederhold, Riley Lajuenesse, and Braedon Gaudet. 45+ years of combined trades experience serving Saskatoon, SK.",
+    "Meet the WLG Homes team - Dawson Wiederhold, Riley Lajuenesse, and Braedon Gaudet. 45+ years of combined trades experience serving Saskatoon, SK.",
   alternates: { canonical: "https://wlghomes.ca/about" },
   openGraph: {
     title: "About WLG Homes - Saskatoon Trades Team",
     description:
-      "Meet the WLG Homes team — Dawson Wiederhold, Riley Lajuenesse, and Braedon Gaudet. 45+ years of combined trades experience serving Saskatoon, SK.",
+      "Meet the WLG Homes team - Dawson Wiederhold, Riley Lajuenesse, and Braedon Gaudet. 45+ years of combined trades experience serving Saskatoon, SK.",
     url: "https://wlghomes.ca/about",
     images: [{ url: "/images/hero.png", width: 1200, height: 630, alt: "WLG Homes team - Saskatoon trades contractors" }],
   },
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "About WLG Homes - Saskatoon Trades Team",
     description:
-      "Meet the WLG Homes team — Dawson Wiederhold, Riley Lajuenesse, and Braedon Gaudet. 45+ years of combined trades experience serving Saskatoon, SK.",
+      "Meet the WLG Homes team - Dawson Wiederhold, Riley Lajuenesse, and Braedon Gaudet. 45+ years of combined trades experience serving Saskatoon, SK.",
     images: ["/images/hero.png"],
   },
 };
@@ -98,7 +98,7 @@ export default function AboutPage() {
               WLG Homes was born from a shared belief: Saskatoon homeowners deserve
               trades work they can actually trust. For years before the business ever
               had a name, the guys behind it were spending their weekends helping out
-              family and friends — fixing up decks, framing garages, rewiring panels,
+              family and friends - fixing up decks, framing garages, rewiring panels,
               replacing roofs. The kind of work you do because you care, not because
               you&rsquo;re getting paid for it.
             </p>
@@ -106,7 +106,7 @@ export default function AboutPage() {
               After years of doing it on the side, the demand was there and the
               decision was easy. They took the skills, the work ethic, and the
               reputation they&rsquo;d already built and turned it into something real.
-              WLG Homes officially opened its doors as a business on January 1st, 2026 — and that same
+              WLG Homes officially opened its doors as a business on January 1st, 2026 - and that same
               friends-and-family standard has carried over to every job since.
             </p>
             <p>
@@ -116,7 +116,7 @@ export default function AboutPage() {
               starter homes to large custom builds across the Saskatoon area.
             </p>
             <p>
-              What sets WLG Homes apart isn&rsquo;t just the skill — it&rsquo;s the approach.
+              What sets WLG Homes apart isn&rsquo;t just the skill - it&rsquo;s the approach.
               They show up on time, communicate clearly, and don&rsquo;t cut corners. When
               you hire WLG Homes, you get the owners on your job site.
             </p>

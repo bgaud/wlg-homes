@@ -2,14 +2,14 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Referral Program — Earn $150 Cash | WLG Homes Saskatoon",
+  title: "Referral Program - Earn $150 Cash | WLG Homes Saskatoon",
   description:
-    "Refer a friend or neighbour to WLG Homes and earn up to $150 cash when their job is complete. No limits — every referral counts. Saskatoon's trades team.",
+    "Refer a friend or neighbour to WLG Homes and earn up to $150 cash when their job is complete. No limits - every referral counts. Saskatoon's trades team.",
   alternates: { canonical: "https://wlghomes.ca/referral" },
   openGraph: {
-    title: "Referral Program — Earn $150 Cash | WLG Homes Saskatoon",
+    title: "Referral Program - Earn $150 Cash | WLG Homes Saskatoon",
     description:
-      "Refer a friend or neighbour to WLG Homes and earn up to $150 cash when their job is complete. No limits — every referral counts.",
+      "Refer a friend or neighbour to WLG Homes and earn up to $150 cash when their job is complete. No limits - every referral counts.",
     url: "https://wlghomes.ca/referral",
     images: [{ url: "/images/hero.png", width: 1200, height: 630, alt: "WLG Homes Referral Program" }],
   },
@@ -112,7 +112,7 @@ export default function ReferralPage() {
             <li>Referral must be a new customer who has not previously worked with WLG Homes.</li>
             <li>The referred job must be completed and payment received before the referral reward is paid.</li>
             <li>Cash reward is up to $150 depending on job size and scope.</li>
-            <li>No limit on how many referrals you can make — every completed job earns you cash.</li>
+            <li>No limit on how many referrals you can make - every completed job earns you cash.</li>
             <li>Make sure your referral mentions your name when they contact us.</li>
           </ul>
         </div>

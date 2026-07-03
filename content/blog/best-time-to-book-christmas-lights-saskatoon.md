@@ -16,15 +16,15 @@ Booking in September or early October means you get first choice of your install
 
 ## Why Does It Book Up So Fast?
 
-Professional Christmas light installation is still a relatively niche service in Saskatoon compared to larger cities. The number of experienced, insured companies offering it is small, and the install season itself is short — realistically 4-6 weeks in which the weather cooperates enough to do roofline work safely.
+Professional Christmas light installation is still a relatively niche service in Saskatoon compared to larger cities. The number of experienced, insured companies offering it is small, and the install season itself is short - realistically 4-6 weeks in which the weather cooperates enough to do roofline work safely.
 
-Add to that the fact that each installation takes a meaningful amount of time — roofline lighting, tree wrapping, and setup isn't a 45-minute job — and you can see why a small team can only do so many homes per week.
+Add to that the fact that each installation takes a meaningful amount of time - roofline lighting, tree wrapping, and setup isn't a 45-minute job - and you can see why a small team can only do so many homes per week.
 
 ## What Does Professional Christmas Light Installation Include?
 
 WLG Homes handles the full service so you don't have to touch a ladder:
 
-**Installation.** We install commercial-grade LED lights along your roofline, eaves, and any other areas you want covered — trees, shrubs, columns. We bring the lights; you don't need to source anything.
+**Installation.** We install commercial-grade LED lights along your roofline, eaves, and any other areas you want covered - trees, shrubs, columns. We bring the lights; you don't need to source anything.
 
 **Commercial-grade LED lights.** We use quality LED lights rated for outdoor use in cold temperatures. They hold up through a Saskatoon winter and look sharp from the street.
 

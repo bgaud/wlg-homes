@@ -47,7 +47,7 @@ const services = [
   },
   {
     title: "Renovations",
-    description: "Full-scope home renovations in Saskatoon with no subcontracting surprises — owners on every job site.",
+    description: "Full-scope home renovations in Saskatoon with no subcontracting surprises - owners on every job site.",
     img: "/images/roofing2.jpg",
     alt: "WLG Homes home renovation project in Saskatoon",
     href: "/services/renovations",
@@ -71,7 +71,7 @@ export default function ServicesPage() {
           </h1>
           <p className="text-slate-300 text-lg">
             Expert trades work across roofing, electrical, framing, renovations, and seasonal lighting.
-            All services delivered by the owners — no subcontracting.
+            All services delivered by the owners - no subcontracting.
           </p>
         </div>
       </section>

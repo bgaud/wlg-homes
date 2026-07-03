@@ -4,7 +4,7 @@ date: "2026-06-12"
 excerpt: "Thinking about adding a detached garage to your Saskatoon property? Here's what the process looks like, what permits you need, and what to expect from a framing crew."
 ---
 
-A detached garage is one of the most common projects WLG Homes gets called for in Saskatoon — and one of the most asked-about. It adds usable space, protects vehicles from Saskatchewan winters, and adds clear value to a property. Here's a realistic look at the full process.
+A detached garage is one of the most common projects WLG Homes gets called for in Saskatoon - and one of the most asked-about. It adds usable space, protects vehicles from Saskatchewan winters, and adds clear value to a property. Here's a realistic look at the full process.
 
 ## Do You Need a Permit to Build a Detached Garage in Saskatoon?
 
@@ -29,14 +29,14 @@ Once the permit is approved and the concrete pad is poured (typically done by a 
 - **Garage door opening** framed to your door size with an appropriate header
 - **Walk-through door opening** framed to standard rough opening
 - **Window openings** if planned
-- **Roof framing** — either stick-framed rafters or engineered trusses, depending on the span and your budget
+- **Roof framing** - either stick-framed rafters or engineered trusses, depending on the span and your budget
 - **Sheathing** on walls and roof deck, ready for exterior finishing and roofing
 
 WLG Homes does the complete framing scope from sill plates to the roof deck. We coordinate with your roofing, siding, and electrical trades to keep the project sequenced properly.
 
 ## Do You Need Electrical in a Detached Garage?
 
-Most homeowners want at least basic electrical in a detached garage — lights and a few outlets. Many want more: a dedicated circuit for a welder, an EV charger, radiant heat, or a full workshop setup.
+Most homeowners want at least basic electrical in a detached garage - lights and a few outlets. Many want more: a dedicated circuit for a welder, an EV charger, radiant heat, or a full workshop setup.
 
 Electrical in a detached garage requires its own sub-panel fed from your house panel, and it needs to be permitted and inspected. WLG Homes has two Saskatchewan-licensed electricians who can handle the full electrical scope for your garage, coordinated with the framing so rough-in happens at the right stage before sheathing goes on.
 
@@ -51,10 +51,10 @@ The timeline depends on the permit approval process (typically 2-6 weeks from ap
 Common sizes in Saskatoon:
 
 - **Single car (12x22 or 14x22):** Fits one vehicle with limited storage
-- **Double car (22x22 or 24x24):** The most popular choice — two vehicles plus wall storage
+- **Double car (22x22 or 24x24):** The most popular choice - two vehicles plus wall storage
 - **Oversized double (24x28 or 26x30):** Fits two vehicles with room for a workshop or more storage
 
-Building slightly larger than you think you need almost always pays off. The cost difference between a 22x22 and a 24x26 is relatively modest at the framing stage — much cheaper than expanding later.
+Building slightly larger than you think you need almost always pays off. The cost difference between a 22x22 and a 24x26 is relatively modest at the framing stage - much cheaper than expanding later.
 
 ## Getting a Quote for a Detached Garage in Saskatoon
 

@@ -4,7 +4,7 @@ date: "2026-01-20"
 excerpt: "Thinking about adding a garage to your Saskatoon property? Here's what the framing process looks like from slab to sheathing."
 ---
 
-A detached garage is one of the best investments you can make in a Saskatoon property. Extra storage, a workshop, vehicle protection — the reasons are obvious. But what actually goes into framing one? Here's a straightforward breakdown.
+A detached garage is one of the best investments you can make in a Saskatoon property. Extra storage, a workshop, vehicle protection - the reasons are obvious. But what actually goes into framing one? Here's a straightforward breakdown.
 
 ## Step 1: Permits and Planning
 
@@ -12,7 +12,7 @@ Before any framing begins, you'll need a building permit from the City of Saskat
 
 ## Step 2: The Slab
 
-Framing starts after the concrete slab is poured and cured — typically a few days to a week depending on conditions. The slab forms the base that wall framing is anchored to.
+Framing starts after the concrete slab is poured and cured - typically a few days to a week depending on conditions. The slab forms the base that wall framing is anchored to.
 
 ## Step 3: Wall Framing
 
@@ -28,7 +28,7 @@ Wall sheathing goes on after the roof is framed. This ties the structure togethe
 
 ## How Long Does It Take?
 
-A standard 24x24 double garage typically takes 5–10 working days to frame, sheath, and roof — weather permitting. We aim to get the shell watertight as quickly as possible.
+A standard 24x24 double garage typically takes 5–10 working days to frame, sheath, and roof - weather permitting. We aim to get the shell watertight as quickly as possible.
 
 ---
 

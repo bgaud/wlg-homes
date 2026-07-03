@@ -31,7 +31,7 @@ const areas: Record<string, AreaData> = {
     context:
       "Warman is one of Saskatchewan's fastest-growing cities, with a large share of newer homes built in the last 10-15 years. That means lots of unfinished basements waiting to be developed, garages to build, and electrical work to support growing families who moved out from Saskatoon.",
     roofingNote:
-      "Warman's newer homes are generally in good shape roofing-wise, but any home with a roof over 10 years old is worth having checked — especially after a hail event. WLG Homes provides free roofing assessments in Warman and can turn quotes around quickly.",
+      "Warman's newer homes are generally in good shape roofing-wise, but any home with a roof over 10 years old is worth having checked - especially after a hail event. WLG Homes provides free roofing assessments in Warman and can turn quotes around quickly.",
     electricalNote:
       "New construction electrical, panel upgrades, and EV charger installations are common requests we get from Warman homeowners. Everything is done to Saskatchewan electrical code, fully permitted, and inspected before we close walls.",
     framingNote:
@@ -65,13 +65,13 @@ const areas: Record<string, AreaData> = {
     metaDescription:
       "WLG Homes offers roofing, framing, electrical, and renovation services across Saskatoon, SK. Licensed trades, free estimates, owners on every job. Call 306-270-6616.",
     heroSubtitle:
-      "Saskatoon's local trades team — roofing, framing, electrical, and full garage builds. Free estimates, owners on every job site.",
+      "Saskatoon's local trades team - roofing, framing, electrical, and full garage builds. Free estimates, owners on every job site.",
     intro:
       "WLG Homes is based in Saskatoon and works across the city and surrounding communities. From mature neighbourhoods in the core to the newest developments on the edges of the city, we handle roofing, framing, electrical, full garage builds, and home renovations for Saskatoon homeowners.",
     context:
-      "Saskatoon is a city of contrasts — older bungalows with aging roofs and electrical systems sitting a few blocks from brand-new infills. We work in all of it. Whether you're in a 1960s home in Confederation Park that needs a panel upgrade or a newer build in Evergreen that needs a detached garage, WLG Homes has the trades to handle it.",
+      "Saskatoon is a city of contrasts - older bungalows with aging roofs and electrical systems sitting a few blocks from brand-new infills. We work in all of it. Whether you're in a 1960s home in Confederation Park that needs a panel upgrade or a newer build in Evergreen that needs a detached garage, WLG Homes has the trades to handle it.",
     roofingNote:
-      "Saskatoon's climate is hard on roofs — extreme temperature swings, heavy snow loads, and freeze-thaw cycles every spring. Older neighbourhoods like Nutana, Caswell Hill, and Hampton Village have a lot of homes with original or first-replacement roofs that are due. WLG Homes provides free on-site roofing assessments across the city.",
+      "Saskatoon's climate is hard on roofs - extreme temperature swings, heavy snow loads, and freeze-thaw cycles every spring. Older neighbourhoods like Nutana, Caswell Hill, and Hampton Village have a lot of homes with original or first-replacement roofs that are due. WLG Homes provides free on-site roofing assessments across the city.",
     electricalNote:
       "With two Saskatchewan-licensed electricians on our crew, we handle panel upgrades, new construction wiring, basement suite circuits, EV charger installations, and hot tub hookups throughout Saskatoon. All work is fully permitted through SaskPower and inspected before walls close.",
     framingNote:
@@ -89,7 +89,7 @@ const areas: Record<string, AreaData> = {
     intro:
       "WLG Homes serves Delisle, SK for roofing, framing, electrical work, and home renovations. Located southwest of Saskatoon, Delisle is a community we travel to regularly for homeowners who want quality trades work without waiting on an unfamiliar crew.",
     context:
-      "Delisle is a tight-knit community with a mix of older established homes and newer builds. Homeowners here often need the same work as any Saskatoon neighbourhood — roofing that handles Saskatchewan winters, electrical upgrades for modern demands, and garage builds or basement framing to add usable space.",
+      "Delisle is a tight-knit community with a mix of older established homes and newer builds. Homeowners here often need the same work as any Saskatoon neighbourhood - roofing that handles Saskatchewan winters, electrical upgrades for modern demands, and garage builds or basement framing to add usable space.",
     roofingNote:
       "Many homes in Delisle have roofs that are 15 to 25 years old and due for a serious look before another Saskatchewan winter. WLG Homes will make the trip out for a free roofing assessment and give you an honest read on whether repairs or a full replacement is the right call.",
     electricalNote:
@@ -107,13 +107,13 @@ const areas: Record<string, AreaData> = {
     heroSubtitle:
       "Serving Prince Albert homeowners with roofing, framing, electrical, and full builds. Free estimates from an experienced Saskatchewan trades team.",
     intro:
-      "WLG Homes serves Prince Albert, SK for roofing, framing, electrical, and renovation work. We make the drive north for the right projects and bring the same standard of work to Prince Albert that we deliver in Saskatoon — no shortcuts, owners on every job.",
+      "WLG Homes serves Prince Albert, SK for roofing, framing, electrical, and renovation work. We make the drive north for the right projects and bring the same standard of work to Prince Albert that we deliver in Saskatoon - no shortcuts, owners on every job.",
     context:
       "Prince Albert has a wide range of housing stock, from older homes in established neighbourhoods to newer builds on the edges of the city. Common needs we see in PA include aging roofs, electrical panels that need upgrading for modern loads, and demand for detached garages and basement development.",
     roofingNote:
-      "The climate in Prince Albert is even harsher than Saskatoon for roofing — colder winters, heavier snow, and freeze-thaw cycles that push shingles and flashing to their limits. If your roof is more than 15 years old, a proper assessment before winter is worth it. WLG Homes provides free estimates in Prince Albert.",
+      "The climate in Prince Albert is even harsher than Saskatoon for roofing - colder winters, heavier snow, and freeze-thaw cycles that push shingles and flashing to their limits. If your roof is more than 15 years old, a proper assessment before winter is worth it. WLG Homes provides free estimates in Prince Albert.",
     electricalNote:
-      "Panel upgrades, new construction wiring, and residential electrical work in Prince Albert — all done by Saskatchewan-licensed electricians and fully permitted. We coordinate with the City of Prince Albert on permits and get work inspected before closing walls.",
+      "Panel upgrades, new construction wiring, and residential electrical work in Prince Albert - all done by Saskatchewan-licensed electricians and fully permitted. We coordinate with the City of Prince Albert on permits and get work inspected before closing walls.",
     framingNote:
       "Basement framing and garage construction in Prince Albert follow the same National Building Code standards as anywhere in Saskatchewan. We handle the permit coordination and frame to inspection-ready standards so your project doesn't stall at the inspection stage.",
   },
@@ -166,7 +166,7 @@ export default async function AreaPage({ params }: Props) {
   const schema = {
     "@context": "https://schema.org",
     "@type": "Service",
-    name: `WLG Homes — Trades Services in ${data.name}`,
+    name: `WLG Homes - Trades Services in ${data.name}`,
     description: data.metaDescription,
     provider: {
       "@type": "LocalBusiness",
@@ -268,7 +268,7 @@ export default async function AreaPage({ params }: Props) {
           <ul className="space-y-4 text-slate-600 text-sm leading-relaxed">
             <li className="flex gap-3">
               <span className="text-blue-600 font-bold mt-0.5">✓</span>
-              <span><strong className="text-[#1e2a3a]">Owners on every job.</strong> You&rsquo;re hiring three experienced tradespeople — a lead framer and two licensed electricians — not a crew of subcontractors.</span>
+              <span><strong className="text-[#1e2a3a]">Owners on every job.</strong> You&rsquo;re hiring three experienced tradespeople - a lead framer and two licensed electricians - not a crew of subcontractors.</span>
             </li>
             <li className="flex gap-3">
               <span className="text-blue-600 font-bold mt-0.5">✓</span>
@@ -293,7 +293,7 @@ export default async function AreaPage({ params }: Props) {
             Get a Free Estimate in {data.name}
           </h2>
           <p className="text-blue-100 text-lg mb-8">
-            Roofing, framing, electrical, or seasonal lighting — we&rsquo;ll come to your property in {data.name}, assess the scope, and give you a straight answer on cost.
+            Roofing, framing, electrical, or seasonal lighting - we&rsquo;ll come to your property in {data.name}, assess the scope, and give you a straight answer on cost.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact" className="inline-block bg-white text-blue-700 hover:bg-blue-50 font-bold px-7 py-3.5 rounded-md transition-colors">

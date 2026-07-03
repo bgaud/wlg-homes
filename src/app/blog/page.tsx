@@ -5,12 +5,12 @@ import { getAllPosts } from "@/lib/blog";
 export const metadata: Metadata = {
   title: "Blog - Saskatoon Trades Tips & Guides",
   description:
-    "Tips, guides, and news from the WLG Homes team — roofing advice, framing guides, electrical tips, and more for Saskatoon homeowners.",
+    "Tips, guides, and news from the WLG Homes team - roofing advice, framing guides, electrical tips, and more for Saskatoon homeowners.",
   alternates: { canonical: "https://wlghomes.ca/blog" },
   openGraph: {
     title: "Blog - Saskatoon Trades Tips & Guides",
     description:
-      "Tips, guides, and news from the WLG Homes team — roofing advice, framing guides, electrical tips, and more for Saskatoon homeowners.",
+      "Tips, guides, and news from the WLG Homes team - roofing advice, framing guides, electrical tips, and more for Saskatoon homeowners.",
     url: "https://wlghomes.ca/blog",
     images: [{ url: "/images/hero.png", width: 1200, height: 630, alt: "WLG Homes blog - Saskatoon trades tips" }],
   },
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Blog - Saskatoon Trades Tips & Guides",
     description:
-      "Tips, guides, and news from the WLG Homes team — roofing advice, framing guides, electrical tips, and more for Saskatoon homeowners.",
+      "Tips, guides, and news from the WLG Homes team - roofing advice, framing guides, electrical tips, and more for Saskatoon homeowners.",
     images: ["/images/hero.png"],
   },
 };
@@ -44,7 +44,7 @@ export default function BlogPage() {
           <h2 id="posts-heading" className="sr-only">All Posts</h2>
           {posts.length === 0 ? (
             <p className="text-slate-500 text-center py-12">
-              No posts yet — check back soon.
+              No posts yet - check back soon.
             </p>
           ) : (
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">

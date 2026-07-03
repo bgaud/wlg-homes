@@ -4,11 +4,11 @@ date: "2026-02-10"
 excerpt: "Saskatoon winters are brutal on roofs. Here are five things you can do to extend your roof's life and avoid costly repairs."
 ---
 
-Saskatoon's climate is one of the hardest on residential roofing in Canada — extreme temperature swings, heavy snow loads, and freeze-thaw cycles put serious stress on your shingles, flashing, and underlayment. Here are five tips to protect your investment.
+Saskatoon's climate is one of the hardest on residential roofing in Canada - extreme temperature swings, heavy snow loads, and freeze-thaw cycles put serious stress on your shingles, flashing, and underlayment. Here are five tips to protect your investment.
 
 ## 1. Inspect Your Roof Every Spring
 
-After winter, walk your yard and look for missing, cracked, or curling shingles. Catching damage early means a simple repair instead of a full asphalt shingle replacement. Look for granules in your eavestroughs — that's a sign your shingles are aging.
+After winter, walk your yard and look for missing, cracked, or curling shingles. Catching damage early means a simple repair instead of a full asphalt shingle replacement. Look for granules in your eavestroughs - that's a sign your shingles are aging.
 
 ## 2. Keep Your Attic Well-Ventilated
 

@@ -44,7 +44,7 @@ const faqs = [
   },
   {
     q: "Do you repair roofs or just replace them?",
-    a: "We do both. If your roof has isolated damage — a few missing shingles, flashing issues, or a small leak — we can repair it. If the shingles are aging or the damage is widespread, a full replacement is usually more cost-effective.",
+    a: "We do both. If your roof has isolated damage - a few missing shingles, flashing issues, or a small leak - we can repair it. If the shingles are aging or the damage is widespread, a full replacement is usually more cost-effective.",
   },
   {
     q: "Do you offer a warranty on roofing work?",

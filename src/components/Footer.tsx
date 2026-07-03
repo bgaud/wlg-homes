@@ -36,7 +36,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
           {/* Col 1: Brand */}
           <div className="flex flex-col items-start">
-            <Link href="/" aria-label="WLG Homes — go to homepage">
+            <Link href="/" aria-label="WLG Homes - go to homepage">
               <Image
                 src="/images/logo.png"
                 alt="WLG Homes logo"
@@ -47,7 +47,7 @@ export default function Footer() {
             </Link>
             <p className="text-sm leading-relaxed">
               Saskatoon&rsquo;s trusted trades team. Framing, roofing, electrical,
-              renovations, and more — built on 45+ years of combined experience.
+              renovations, and more - built on 45+ years of combined experience.
             </p>
           </div>
 

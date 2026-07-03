@@ -4,7 +4,7 @@ date: "2026-06-12"
 excerpt: "A straightforward breakdown of what basement framing costs in Saskatoon, what drives the price, and what to expect from start to finish."
 ---
 
-Finishing your basement starts with framing — and it's one of the most common projects WLG Homes gets called for in Saskatoon. Before you start getting quotes, here's what drives the cost and what a proper basement framing job actually includes.
+Finishing your basement starts with framing - and it's one of the most common projects WLG Homes gets called for in Saskatoon. Before you start getting quotes, here's what drives the cost and what a proper basement framing job actually includes.
 
 ## What Affects the Cost of Basement Framing in Saskatoon?
 
@@ -14,7 +14,7 @@ Finishing your basement starts with framing — and it's one of the most common 
 
 **Ceiling height and mechanical obstructions.** Basements with low ceilings or complicated mechanical runs (furnace ducts, plumbing drains, electrical runs) require more soffit framing to box them in cleanly. This adds material and labour cost compared to a clean open basement.
 
-**Egress windows and load-bearing walls.** If you're adding a bedroom, building code in Saskatchewan requires an egress window — an opening large enough to escape through in an emergency. Cutting and framing for a new egress window is a separate cost. Similarly, if any existing walls are load-bearing and need modification, that adds complexity.
+**Egress windows and load-bearing walls.** If you're adding a bedroom, building code in Saskatchewan requires an egress window - an opening large enough to escape through in an emergency. Cutting and framing for a new egress window is a separate cost. Similarly, if any existing walls are load-bearing and need modification, that adds complexity.
 
 **Permit requirements.** Basement development requires a building permit in Saskatoon. WLG Homes pulls the permit on your behalf, which is included in the scope. Permit fees are typically $100-$300 depending on the project value and are your cost to the city.
 
@@ -49,7 +49,7 @@ Having your framer and electrician be the same company means fewer scheduling co
 
 ## Getting a Quote for Basement Framing in Saskatoon
 
-The only way to get an accurate number is an in-person visit. Basement layouts vary too much for a reliable phone quote. WLG Homes provides free estimates — we'll visit your site, walk through the planned layout with you, and give you a written scope and price.
+The only way to get an accurate number is an in-person visit. Basement layouts vary too much for a reliable phone quote. WLG Homes provides free estimates - we'll visit your site, walk through the planned layout with you, and give you a written scope and price.
 
 ---
 
