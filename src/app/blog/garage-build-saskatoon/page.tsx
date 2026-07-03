@@ -93,7 +93,7 @@ export default function GarageBuildPage() {
           <div className="bg-blue-50 border border-blue-100 rounded-lg p-5 mb-10">
             <p className="text-blue-800 font-semibold text-sm uppercase tracking-wide mb-1">Summary</p>
             <p className="text-blue-700 text-sm leading-relaxed">
-              From a poured concrete pad to finished siding and shingles &mdash; a full detached garage build in Saskatoon, told in photos and video. Plus homeowners who made the whole week one to remember.
+              From a poured concrete pad to finished siding and shingles in just two days &mdash; 28 hours of work, start to finish. A full detached garage build in Saskatoon, told in photos and video. Plus homeowners who made the whole job one to remember.
             </p>
           </div>
 
@@ -101,10 +101,10 @@ export default function GarageBuildPage() {
           <div className="prose prose-lg prose-slate max-w-none prose-headings:text-[#1e2a3a] prose-headings:font-bold prose-h2:text-2xl prose-h2:mt-10 prose-h2:mb-4 prose-p:text-slate-600 prose-p:leading-relaxed prose-p:mb-5 prose-strong:text-[#1e2a3a]">
 
             <p>
-              There are jobs you show up to and just know it&rsquo;s going to be a good week. The scope is clear, the site is ready, and within the first ten minutes of being there you get a read on the kind of people you&rsquo;re working for. This garage build was one of those jobs &mdash; and honestly, it might be one of our favourites since we started WLG Homes.
+              There are jobs you show up to and just know it&rsquo;s going to be a good one. The scope is clear, the site is ready, and within the first ten minutes of being there you get a read on the kind of people you&rsquo;re working for. This garage build was one of those jobs &mdash; two days, 28 hours, start to finish. Honestly one of our favourites since we started WLG Homes.
             </p>
 
-            <h2>Day One: Concrete Pad and First Impressions</h2>
+            <h2>Day One: Walls Up, Rafters On</h2>
 
             <p>
               The homeowners had the concrete pad poured and cured well before we arrived, which is exactly how you want to start a garage build. No waiting, no scheduling around trades you don&rsquo;t control. We showed up, the slab was there, it was square, and we got to work.
@@ -113,13 +113,7 @@ export default function GarageBuildPage() {
               Before we&rsquo;d finished unloading the truck, the homeowner walked out with coffees. Not the kind you grab at a gas station on the way &mdash; actual good coffee, made at home. That&rsquo;s a small thing, but it tells you something. These were people who paid attention to the people working on their property. That energy carried through the entire job.
             </p>
             <p>
-              We snapped our layout lines on the slab, cut our plates, and started standing walls. By the end of day one, four walls were up and braced. There&rsquo;s something genuinely satisfying about watching a pile of lumber turn into a building in a single day.
-            </p>
-
-            <h2>Framing the Roof</h2>
-
-            <p>
-              Day two was all about the roof structure. We set our ridge, cut our commons, and started working our way down from the peak. Setting rafters on a well-framed building goes fast when the walls are plumb and the layout is right &mdash; and this one was.
+              We snapped our layout lines on the slab, cut our plates, and started standing walls. The framing moved fast &mdash; when the slab is square, everything else lines up. Once the walls were plumb and braced we moved straight to the roof. Set the ridge, cut the commons, worked our way down from the peak. Setting rafters on a well-framed building goes quickly when the layout is right, and this one was. By the time we packed up on day one, the garage was completely framed &mdash; four walls, full roof structure, OSB deck sheathed. A pile of lumber turned into a building in a single day.
             </p>
           </div>
 
@@ -135,16 +129,19 @@ export default function GarageBuildPage() {
               />
             </div>
             <figcaption className="text-center text-slate-400 text-sm mt-3 italic">
-              Setting rafters on day two &mdash; the roof structure coming together quickly.
+              Setting rafters on day one &mdash; walls were already standing, roof structure coming together before end of day.
             </figcaption>
           </figure>
 
           <div className="prose prose-lg prose-slate max-w-none prose-headings:text-[#1e2a3a] prose-headings:font-bold prose-h2:text-2xl prose-h2:mt-10 prose-h2:mb-4 prose-p:text-slate-600 prose-p:leading-relaxed prose-p:mb-5 prose-strong:text-[#1e2a3a]">
             <p>
-              Once the rafters were set and the ridge was locked in, we moved to sheathing the deck. OSB across the full span, every sheet fastened properly. By the time we climbed down, the garage had a real roof &mdash; not just a structure, but a weathertight shape.
+              The homeowners came out throughout the day to check progress. They were the kind of clients who asked good questions and actually listened to the answers. We walked them through what we were doing and why at each step, and they were genuinely interested in understanding the build. Those conversations make the day go faster.
             </p>
+
+            <h2>Day Two: House Wrap, Siding, and Shingles</h2>
+
             <p>
-              The homeowners came out to watch the sheathing go on. They were the kind of clients who asked good questions and actually listened to the answers. We walked them through what we were doing and why at each step, and they were genuinely interested in understanding the build. Those conversations make the day go faster.
+              Day two was about closing the building in. We came back to a fully framed garage &mdash; all we had to do was make it weather-tight and finished.
             </p>
           </div>
 
@@ -184,10 +181,10 @@ export default function GarageBuildPage() {
             <h2>House Wrap</h2>
 
             <p>
-              With the deck sheathed and the walls squared up, we wrapped the building in Tyvek. This step gets rushed on some job sites and it shouldn&rsquo;t be &mdash; house wrap is what stands between your framing and every rainstorm until the siding goes on. Every seam gets taped, every corner gets detailed. We don&rsquo;t skip it.
+              First thing day two, we wrapped the building in Tyvek. This step gets rushed on some job sites and it shouldn&rsquo;t be &mdash; house wrap is what stands between your framing and every rainstorm until the siding goes on. Every seam gets taped, every corner gets detailed. We don&rsquo;t skip it.
             </p>
             <p>
-              That afternoon, the homeowner brought out lunch. Full spread &mdash; sandwiches, cold drinks, the works. The crew ate well. It might sound like a small thing but when someone goes out of their way to take care of you like that, you notice it. You just want to do good work for people like that.
+              The homeowner brought out lunch that day. Full spread &mdash; sandwiches, cold drinks, the works. The crew ate well. It might sound like a small thing but when someone goes out of their way to take care of you like that, you notice it. You just want to do good work for people like that.
             </p>
           </div>
 
@@ -211,7 +208,7 @@ export default function GarageBuildPage() {
             <h2>Siding</h2>
 
             <p>
-              The homeowners had chosen white vertical steel siding with dark trim &mdash; clean, modern, and built to handle a Saskatchewan winter without maintenance headaches. Steel siding goes on fast when you&rsquo;re set up properly, but the details are what separate a good job from a great one: the J-channels, the corners, every cut at every penetration.
+              The homeowners had chosen white vertical vinyl siding with dark trim &mdash; clean, classic, and low maintenance. Vinyl goes on fast when you&rsquo;re set up properly, but the details are what separate a good job from a great one: the J-channels, the corners, every cut at every penetration.
             </p>
             <p>
               We set up our brake and started working our way around the building. Panel by panel, it started looking like a finished garage.
@@ -224,7 +221,7 @@ export default function GarageBuildPage() {
               <div className="relative w-full rounded-xl overflow-hidden" style={{ aspectRatio: "3/4" }}>
                 <Image
                   src="/images/garage-build/05-siding-start.jpg"
-                  alt="White vertical steel siding installation beginning on Saskatoon garage build"
+                  alt="White vertical vinyl siding installation beginning on Saskatoon garage build"
                   fill
                   className="object-cover"
                   sizes="(max-width: 640px) 100vw, 50vw"
@@ -238,7 +235,7 @@ export default function GarageBuildPage() {
               <div className="relative w-full rounded-xl overflow-hidden" style={{ aspectRatio: "3/4" }}>
                 <Image
                   src="/images/garage-build/06-siding-progress.jpg"
-                  alt="Crew installing vertical steel siding panels on detached garage in Saskatoon"
+                  alt="Crew installing vertical vinyl siding panels on detached garage in Saskatoon"
                   fill
                   className="object-cover"
                   sizes="(max-width: 640px) 100vw, 50vw"
@@ -252,7 +249,7 @@ export default function GarageBuildPage() {
 
           <div className="prose prose-lg prose-slate max-w-none prose-headings:text-[#1e2a3a] prose-headings:font-bold prose-h2:text-2xl prose-h2:mt-10 prose-h2:mb-4 prose-p:text-slate-600 prose-p:leading-relaxed prose-p:mb-5 prose-strong:text-[#1e2a3a]">
             <p>
-              The homeowners were out checking progress regularly. Not hovering &mdash; just genuinely excited to watch their garage take shape. They brought out cold drinks on the hot afternoon stretch, which nobody complained about. By the end of the day the siding was most of the way around and it was looking sharp.
+              The homeowners were out checking progress regularly. Not hovering &mdash; just genuinely excited to watch it come together. They brought out cold drinks on the hot afternoon stretch, which nobody complained about.
             </p>
 
             <h2>Shingles and the Final Push</h2>
@@ -261,7 +258,7 @@ export default function GarageBuildPage() {
               While the last siding panels were going on, part of the crew moved to the roof. Dark architectural shingles &mdash; proper ice-and-water shield at the eaves, synthetic underlayment across the full deck, drip edge on every perimeter edge. The same way we&rsquo;d do it on any roof we want to last.
             </p>
             <p>
-              The whole build had this momentum to it. Nobody was dragging their feet, nobody was watching the clock. When a job is fun and the clients are good, the days go by fast.
+              By the end of day two, 28 hours in, the garage was done. The whole build had this momentum to it &mdash; nobody was dragging their feet, nobody was watching the clock. When a job is fun and the clients are good, the days go by fast.
             </p>
           </div>
 
@@ -270,7 +267,7 @@ export default function GarageBuildPage() {
             <div className="relative w-full max-w-lg mx-auto rounded-xl overflow-hidden" style={{ aspectRatio: "3/4" }}>
               <Image
                 src="/images/garage-build/07-siding-panel.jpg"
-                alt="White vertical steel siding nearly complete on detached garage with window in Saskatoon"
+                alt="White vertical vinyl siding nearly complete on detached garage with window in Saskatoon"
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 512px"
@@ -302,7 +299,7 @@ export default function GarageBuildPage() {
             <h2>The Finished Product</h2>
 
             <p>
-              Start to finish, this garage came together exactly the way a job should. Good weather, a clear scope, and homeowners who genuinely appreciated the work being done. White vertical steel siding, dark trim, dark architectural shingles &mdash; it turned out exactly what they asked for, and then some.
+              Start to finish, this garage came together exactly the way a job should. Good weather, a clear scope, and homeowners who genuinely appreciated the work being done. White vertical vinyl siding, dark trim, dark architectural shingles &mdash; it turned out exactly what they asked for, and then some.
             </p>
             <p>
               Jobs like this are why we started WLG Homes. Not just to build things, but to build them well for people who care about the result. If you&rsquo;ve got a garage build on your mind, we&rsquo;d love to talk.
