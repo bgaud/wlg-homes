@@ -3,22 +3,22 @@ import Link from "next/link";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Services - Roofing, Electrical, Framing & More in Saskatoon",
+  title: "Services - Roofing, Electrical, Framing, Full Builds & More in Saskatoon",
   description:
-    "WLG Homes offers professional roofing, licensed electrical, residential framing, renovations, and seasonal lighting in Saskatoon, SK. Free estimates available.",
+    "WLG Homes offers professional roofing, licensed electrical, residential framing, full garage and home builds, renovations, and seasonal lighting in Saskatoon, SK. Free estimates available.",
   alternates: { canonical: "https://wlghomes.ca/services" },
   openGraph: {
-    title: "Services - Roofing, Electrical, Framing & More in Saskatoon",
+    title: "Services - Roofing, Electrical, Framing, Full Builds & More in Saskatoon",
     description:
-      "WLG Homes offers professional roofing, licensed electrical, residential framing, renovations, and seasonal lighting in Saskatoon, SK. Free estimates available.",
+      "WLG Homes offers professional roofing, licensed electrical, residential framing, full garage and home builds, renovations, and seasonal lighting in Saskatoon, SK. Free estimates available.",
     url: "https://wlghomes.ca/services",
     images: [{ url: "/images/hero.png", width: 1200, height: 630, alt: "WLG Homes services in Saskatoon" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Services - Roofing, Electrical, Framing & More in Saskatoon",
+    title: "Services - Roofing, Electrical, Framing, Full Builds & More in Saskatoon",
     description:
-      "WLG Homes offers professional roofing, licensed electrical, residential framing, renovations, and seasonal lighting in Saskatoon, SK. Free estimates available.",
+      "WLG Homes offers professional roofing, licensed electrical, residential framing, full builds, renovations, and seasonal lighting in Saskatoon, SK. Free estimates available.",
     images: ["/images/hero.png"],
   },
 };
@@ -53,6 +53,13 @@ const services = [
     href: "/services/renovations",
   },
   {
+    title: "Full Builds",
+    description: "Full detached garage and home builds from the ground up - framing, siding, roofing, and electrical all under one crew. No subcontracting.",
+    img: "/images/garage-build/06-siding-progress.jpg",
+    alt: "WLG Homes full garage build in Saskatoon - framing, siding, and roofing",
+    href: "/blog/garage-build-saskatoon",
+  },
+  {
     title: "Seasonal Lighting",
     description: "Professional Christmas and holiday lighting installation, maintenance, and takedown for Saskatoon homes.",
     img: "/images/christmas-lights.jpg",
@@ -70,7 +77,7 @@ export default function ServicesPage() {
             Our Services in Saskatoon
           </h1>
           <p className="text-slate-300 text-lg">
-            Expert trades work across roofing, electrical, framing, renovations, and seasonal lighting.
+            Expert trades work across roofing, electrical, framing, full builds, renovations, and seasonal lighting.
             All services delivered by the owners - no subcontracting.
           </p>
         </div>

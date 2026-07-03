@@ -327,14 +327,14 @@ export default function GarageBuildPage() {
             Watch the Build
           </h2>
           <p className="text-slate-500 text-center text-sm mb-8">
-            The finished garage - start to end in under a minute.
+            A walk-around of the finished garage.
           </p>
           <div className="rounded-xl overflow-hidden shadow-lg bg-black">
             <video
               controls
               className="w-full"
               preload="metadata"
-              aria-label="Time-lapse video of WLG Homes garage build in Saskatoon from framing to finished product"
+              aria-label="Walk-around video of the finished WLG Homes detached garage build in Saskatoon"
             >
               <source src="/videos/garage-build-finished.mov" type="video/quicktime" />
               <source src="/videos/garage-build-finished.mp4" type="video/mp4" />
