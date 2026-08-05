@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Referral Program - Earn $150 Cash | WLG Homes Saskatoon",
+  title: "Referral Program - Earn $150 Cash in Saskatoon",
   description:
     "Refer a friend or neighbour to WLG Homes and earn up to $150 cash when their job is complete. No limits - every referral counts. Saskatoon's trades team.",
   alternates: { canonical: "https://wlghomes.ca/referral" },
@@ -12,6 +12,13 @@ export const metadata: Metadata = {
       "Refer a friend or neighbour to WLG Homes and earn up to $150 cash when their job is complete. No limits - every referral counts.",
     url: "https://wlghomes.ca/referral",
     images: [{ url: "/images/hero.png", width: 1200, height: 630, alt: "WLG Homes Referral Program" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Referral Program - Earn $150 Cash | WLG Homes Saskatoon",
+    description:
+      "Refer a friend or neighbour to WLG Homes and earn up to $150 cash when their job is complete. No limits - every referral counts.",
+    images: ["/images/hero.png"],
   },
 };
 

@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Christmas Lighting Installation Saskatoon - WLG Homes",
+  title: "Christmas Lighting Installation Saskatoon",
   description:
     "Professional Christmas and holiday lighting installation in Saskatoon by WLG Homes. Roofline lighting, tree wrapping, install and takedown included. Free estimates.",
   alternates: { canonical: "https://wlghomes.ca/services/seasonal-lighting" },

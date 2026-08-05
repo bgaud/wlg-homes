@@ -12,7 +12,7 @@ Follow these steps to set it up.
 
 ### Create the Sheet
 1. Go to [Google Sheets](https://sheets.google.com) and create a new spreadsheet
-2. Name it something like **WLG Homes — Contact Submissions**
+2. Name it something like **WLG Homes - Contact Submissions**
 3. In row 1, add headers: `Timestamp`, `Name`, `Email`, `Phone`, `Message`
 4. Note the Sheet ID from the URL: `https://docs.google.com/spreadsheets/d/SHEET_ID/edit`
 
@@ -23,7 +23,7 @@ Follow these steps to set it up.
 4. Go to **IAM & Admin → Service Accounts** and click **Create Service Account**
 5. Give it a name (e.g. `wlg-homes-sheets`) and click Done
 6. Click the service account → **Keys** tab → **Add Key** → **JSON**
-7. A JSON file will download — keep it safe
+7. A JSON file will download - keep it safe
 
 ### Share the Sheet with the Service Account
 1. Open the JSON key file and find `client_email` (e.g. `wlg-homes-sheets@project.iam.gserviceaccount.com`)
@@ -56,7 +56,7 @@ EMAIL_FROM=onboarding@resend.dev   # or your verified domain email
 When deploying to Vercel:
 1. Go to your project → **Settings → Environment Variables**
 2. Add each variable from `.env.example` with the real values
-3. Redeploy — the contact form will be live
+3. Redeploy - the contact form will be live
 
 ---
 
@@ -72,4 +72,4 @@ Then run:
 npm run dev
 ```
 
-> **Note:** If `GOOGLE_SERVICE_ACCOUNT_KEY` or `RESEND_API_KEY` are not set, those steps are skipped silently — the form will still return `{ success: true }` in development.
+> **Note:** If `GOOGLE_SERVICE_ACCOUNT_KEY` or `RESEND_API_KEY` are not set, those steps are skipped silently - the form will still return `{ success: true }` in development.

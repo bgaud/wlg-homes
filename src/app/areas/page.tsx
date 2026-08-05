@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Service Areas - Saskatoon, Warman & Martensville - WLG Homes",
+  title: "Service Areas - Saskatoon, Warman & Martensville",
   description:
-    "WLG Homes serves Saskatoon and surrounding communities including Stonebridge, Evergreen, Warman, and Martensville. Roofing, framing, electrical, and renovations. Free estimates.",
+    "WLG Homes serves Saskatoon, Warman, Martensville, Delisle, and Prince Albert, SK. Roofing, framing, electrical, and renovations. Free estimates.",
   alternates: { canonical: "https://wlghomes.ca/areas" },
   openGraph: {
     title: "Service Areas - Saskatoon, Warman & Martensville - WLG Homes",
@@ -13,22 +13,22 @@ export const metadata: Metadata = {
     url: "https://wlghomes.ca/areas",
     images: [{ url: "/images/hero.png", width: 1200, height: 630, alt: "WLG Homes service areas in Saskatoon" }],
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Service Areas - Saskatoon, Warman & Martensville - WLG Homes",
+    description:
+      "WLG Homes serves Saskatoon and surrounding communities. Roofing, framing, electrical, and renovations. Free estimates.",
+    images: ["/images/hero.png"],
+  },
 };
 
 const areas = [
   {
-    name: "Stonebridge",
-    slug: "stonebridge",
+    name: "Saskatoon",
+    slug: "saskatoon",
     city: "Saskatoon, SK",
     description:
-      "Saskatoon's largest master-planned community. WLG Homes serves Stonebridge for roofing, basement framing, electrical panel upgrades, and Christmas lighting.",
-  },
-  {
-    name: "Evergreen",
-    slug: "evergreen",
-    city: "Saskatoon, SK",
-    description:
-      "Northwest Saskatoon neighbourhood with a mix of mid-2000s and newer homes. We provide roofing, electrical, and basement development services throughout Evergreen.",
+      "From mature neighbourhoods in the core to the newest developments on the edges of the city, we handle roofing, framing, electrical, full garage builds, and home renovations for Saskatoon homeowners.",
   },
   {
     name: "Warman",
@@ -44,6 +44,20 @@ const areas = [
     description:
       "A growing community just north of Saskatoon. We provide roofing, framing, electrical, and renovation services throughout Martensville.",
   },
+  {
+    name: "Delisle",
+    slug: "delisle",
+    city: "Delisle, SK",
+    description:
+      "Located southwest of Saskatoon, Delisle is a community we travel to regularly for roofing, framing, electrical work, and home renovations.",
+  },
+  {
+    name: "Prince Albert",
+    slug: "prince-albert",
+    city: "Prince Albert, SK",
+    description:
+      "We make the drive north for the right projects and bring the same standard of work to Prince Albert that we deliver in Saskatoon - roofing, framing, electrical, and renovations.",
+  },
 ];
 
 export default function AreasPage() {
@@ -57,7 +71,7 @@ export default function AreasPage() {
             Areas We Serve
           </h1>
           <p className="text-slate-300 text-lg">
-            WLG Homes is based in Saskatoon and serves the greater Saskatoon area including Warman and Martensville. Free estimates throughout our service area.
+            WLG Homes is based in Saskatoon and serves the greater Saskatoon area including Warman, Martensville, Delisle, and Prince Albert. Free estimates throughout our service area.
           </p>
         </div>
       </section>

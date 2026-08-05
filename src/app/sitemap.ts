@@ -18,7 +18,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/blog`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.8 },
     { url: `${base}/contact`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
     { url: `${base}/referral`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
-    { url: `${base}/privacy`, lastModified: new Date(), changeFrequency: "yearly", priority: 0.3 },
     { url: `${base}/areas`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/areas/saskatoon`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.85 },
     { url: `${base}/areas/warman`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.75 },

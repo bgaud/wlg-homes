@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Home Renovation Contractor Saskatoon - WLG Homes",
+  title: "Home Renovation Contractor Saskatoon",
   description:
     "Trusted home renovation services in Saskatoon by WLG Homes. Basement development, structural renovations, and full-scope remodels. Owners on every job site. Free estimates.",
   alternates: { canonical: "https://wlghomes.ca/services/renovations" },

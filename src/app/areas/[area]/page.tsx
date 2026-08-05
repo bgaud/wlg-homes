@@ -21,7 +21,7 @@ const areas: Record<string, AreaData> = {
     name: "Warman",
     city: "Warman",
     slug: "warman",
-    metaTitle: "Roofing, Framing & Electrical in Warman, SK - WLG Homes",
+    metaTitle: "Roofing, Framing & Electrical in Warman, SK",
     metaDescription:
       "WLG Homes provides roofing, framing, electrical, and renovation services in Warman, SK. Licensed trades. Free estimates. 306-270-6616.",
     heroSubtitle:
@@ -41,7 +41,7 @@ const areas: Record<string, AreaData> = {
     name: "Martensville",
     city: "Martensville",
     slug: "martensville",
-    metaTitle: "Roofing, Framing & Electrical in Martensville, SK - WLG Homes",
+    metaTitle: "Roofing, Framing & Electrical in Martensville, SK",
     metaDescription:
       "WLG Homes provides roofing, framing, electrical, and renovation services in Martensville, SK. Licensed trades. Free estimates. 306-270-6616.",
     heroSubtitle:
@@ -61,7 +61,7 @@ const areas: Record<string, AreaData> = {
     name: "Saskatoon",
     city: "Saskatoon",
     slug: "saskatoon",
-    metaTitle: "Roofing, Framing & Electrical in Saskatoon, SK - WLG Homes",
+    metaTitle: "Roofing, Framing & Electrical in Saskatoon, SK",
     metaDescription:
       "WLG Homes offers roofing, framing, electrical, and renovation services across Saskatoon, SK. Licensed trades, free estimates, owners on every job. Call 306-270-6616.",
     heroSubtitle:
@@ -81,7 +81,7 @@ const areas: Record<string, AreaData> = {
     name: "Delisle",
     city: "Delisle",
     slug: "delisle",
-    metaTitle: "Roofing, Framing & Electrical in Delisle, SK - WLG Homes",
+    metaTitle: "Roofing, Framing & Electrical in Delisle, SK",
     metaDescription:
       "WLG Homes provides roofing, framing, electrical, and renovation services in Delisle, SK. Licensed trades from Saskatoon. Free estimates. 306-270-6616.",
     heroSubtitle:
@@ -101,7 +101,7 @@ const areas: Record<string, AreaData> = {
     name: "Prince Albert",
     city: "Prince Albert",
     slug: "prince-albert",
-    metaTitle: "Roofing, Framing & Electrical in Prince Albert, SK - WLG Homes",
+    metaTitle: "Roofing, Framing & Electrical in Prince Albert, SK",
     metaDescription:
       "WLG Homes provides roofing, framing, electrical, and renovation services in Prince Albert, SK. Licensed trades. Free estimates. 306-270-6616.",
     heroSubtitle:

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
-  title: "Contact WLG Homes - Free Estimate Saskatoon",
+  title: "Contact Us - Free Estimate Saskatoon",
   description:
     "Get in touch with WLG Homes in Saskatoon. Request a free estimate for roofing, framing, electrical, or renovation work. We respond within 1 business day.",
   alternates: { canonical: "https://wlghomes.ca/contact" },

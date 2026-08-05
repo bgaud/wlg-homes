@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "About WLG Homes - Saskatoon Trades Team",
+  title: "About Us - Saskatoon Trades Team",
   description:
     "Meet the WLG Homes team - Dawson Wiederhold, Riley Lajuenesse, and Braedon Gaudet. 45+ years of combined trades experience serving Saskatoon, SK.",
   alternates: { canonical: "https://wlghomes.ca/about" },
