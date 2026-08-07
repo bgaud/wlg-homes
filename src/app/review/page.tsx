@@ -6,11 +6,9 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://wlghomes.ca/review" },
 };
 
-// Replace with the short "Get more reviews" link from your Google Business Profile
-// dashboard (Home > Get more reviews) for a true one-tap review screen. This Maps
-// URL is a working fallback that lands on the listing, one extra tap from a review.
-const GOOGLE_REVIEW_URL =
-  "https://www.google.com/maps/place/WLG+Homes/@52.2379344,-106.6449313,9z/data=!3m1!4b1!4m6!3m5!1s0x2c693299ff943e9d:0xeed9c522fc9ab8bc!8m2!3d52.2379344!4d-106.6449313!16s%2Fg%2F11z1jxd2j4";
+// Official "Get more reviews" short link from the Google Business Profile dashboard,
+// opens straight to the review-writing screen.
+const GOOGLE_REVIEW_URL = "https://g.page/r/Cby4mwixdnuEAI/review";
 
 const FACEBOOK_URL = "https://www.facebook.com/profile.php?id=61584288716942";
 
