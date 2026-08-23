@@ -1,6 +1,6 @@
 ---
 title: "Home Renovations and Trades Services in Warman and Martensville: What Homeowners Should Know"
-date: "2026-08-20"
+date: "2026-08-16"
 excerpt: "WLG Homes serves Warman and Martensville with framing, electrical, roofing, and renovation work. Here's what homeowners in both communities typically need and how the process works."
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Basement Development in Saskatoon: What to Expect From Start to Finish"
-date: "2026-08-06"
+date: "2026-08-04"
 excerpt: "A complete walkthrough of basement development in Saskatoon, from permits and framing to electrical rough-in, insulation, and drywall, plus what actually drives your timeline."
 ---
 

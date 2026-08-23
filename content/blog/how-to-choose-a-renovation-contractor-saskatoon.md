@@ -1,6 +1,6 @@
 ---
 title: "How to Choose a Home Renovation Contractor in Saskatoon"
-date: "2026-08-13"
+date: "2026-08-10"
 excerpt: "Six questions every Saskatoon homeowner should ask before hiring a renovation contractor, so you know exactly who is showing up to do the work."
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "How Much Does Christmas Light Installation Cost in Saskatoon?"
-date: "2026-08-27"
+date: "2026-08-22"
 excerpt: "A clear breakdown of what professional Christmas light installation costs in Saskatoon, what drives the price, and whether it's worth it over doing it yourself."
 ---
 
