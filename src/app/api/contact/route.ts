@@ -96,13 +96,13 @@ export async function POST(req: NextRequest) {
       // Notify WLG Homes
       await resend.emails.send({
         from: emailFrom,
-        to: "wlghomes2025@gmail.com",
-        subject: `New enquiry from ${name.trim()} — WLG Homes`,
+        to: "info@wlghomes.ca",
+        subject: `New enquiry from ${name.trim()} - WLG Homes`,
         html: `
           <h2>New Contact Form Submission</h2>
           <p><strong>Name:</strong> ${name.trim()}</p>
           <p><strong>Email:</strong> ${email.trim()}</p>
-          <p><strong>Phone:</strong> ${phone?.trim() || "—"}</p>
+          <p><strong>Phone:</strong> ${phone?.trim() || "N/A"}</p>
           <p><strong>Message:</strong></p>
           <blockquote>${message.trim().replace(/\n/g, "<br/>")}</blockquote>
         `,
@@ -112,14 +112,14 @@ export async function POST(req: NextRequest) {
       await resend.emails.send({
         from: emailFrom,
         to: email.trim(),
-        subject: "We received your message — WLG Homes",
+        subject: "We received your message - WLG Homes",
         html: `
           <p>Hi ${name.trim()},</p>
           <p>Thanks for reaching out to WLG Homes! We've received your message and will get back to you within one business day.</p>
           <p>If you need to reach us sooner, give us a call or text at <a href="tel:13062706616">1-306-270-6616</a>.</p>
           <p>Here's a copy of what you sent us:</p>
           <blockquote style="border-left:3px solid #ccc;padding-left:12px;color:#555;">${message.trim().replace(/\n/g, "<br/>")}</blockquote>
-          <p>— The WLG Homes Team<br/>Saskatoon, SK</p>
+          <p>- The WLG Homes Team<br/>Saskatoon, SK</p>
         `,
       });
     }

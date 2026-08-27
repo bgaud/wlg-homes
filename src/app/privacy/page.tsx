@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { breadcrumbList } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
@@ -7,9 +8,16 @@ export const metadata: Metadata = {
   robots: { index: false },
 };
 
+const breadcrumbSchema = breadcrumbList([
+  { name: "Home", url: "https://wlghomes.ca" },
+  { name: "Privacy Policy", url: "https://wlghomes.ca/privacy" },
+]);
+
 export default function PrivacyPage() {
   return (
-    <section className="py-20 bg-white">
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <section className="py-20 bg-white">
       <div className="max-w-3xl mx-auto px-4 sm:px-6">
         <h1 className="text-4xl font-extrabold text-[#1e2a3a] mb-4">Privacy Policy</h1>
         <p className="text-slate-500 text-sm mb-10">Last updated: January 1, 2026</p>
@@ -75,8 +83,8 @@ export default function PrivacyPage() {
             <p>
               You may request access to, correction of, or deletion of any personal information
               we hold about you by contacting us at{" "}
-              <a href="mailto:wlghomes2025@gmail.com" className="text-blue-600 hover:underline">
-                wlghomes2025@gmail.com
+              <a href="mailto:info@wlghomes.ca" className="text-blue-600 hover:underline">
+                info@wlghomes.ca
               </a>
               .
             </p>
@@ -90,8 +98,8 @@ export default function PrivacyPage() {
             <address className="not-italic mt-2">
               <strong>WLG Homes</strong><br />
               Saskatoon, SK, Canada<br />
-              <a href="mailto:wlghomes2025@gmail.com" className="text-blue-600 hover:underline">
-                wlghomes2025@gmail.com
+              <a href="mailto:info@wlghomes.ca" className="text-blue-600 hover:underline">
+                info@wlghomes.ca
               </a><br />
               <a href="tel:13062706616" className="text-blue-600 hover:underline">
                 1-306-270-6616
@@ -100,6 +108,7 @@ export default function PrivacyPage() {
           </section>
         </div>
       </div>
-    </section>
+      </section>
+    </>
   );
 }

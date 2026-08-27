@@ -1,5 +1,11 @@
 import type { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
+import { breadcrumbList } from "@/lib/schema";
+
+const breadcrumbSchema = breadcrumbList([
+  { name: "Home", url: "https://wlghomes.ca" },
+  { name: "Contact", url: "https://wlghomes.ca/contact" },
+]);
 
 export const metadata: Metadata = {
   title: "Contact Us - Free Estimate Saskatoon",
@@ -25,6 +31,7 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       {/* Hero */}
       <section className="bg-[#1e2a3a] text-white py-20 px-4" aria-labelledby="contact-hero-heading">
         <div className="max-w-3xl mx-auto text-center">
@@ -68,10 +75,10 @@ export default function ContactPage() {
                 <p>
                   <span className="font-semibold text-[#1e2a3a] block">Email</span>
                   <a
-                    href="mailto:wlghomes2025@gmail.com"
+                    href="mailto:info@wlghomes.ca"
                     className="text-blue-600 hover:underline"
                   >
-                    wlghomes2025@gmail.com
+                    info@wlghomes.ca
                   </a>
                 </p>
                 <p>

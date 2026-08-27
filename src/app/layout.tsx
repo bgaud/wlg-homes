@@ -72,7 +72,7 @@ const jsonLd = {
     addressCountry: "CA",
   },
   telephone: "+13062706616",
-  email: "wlghomes2025@gmail.com",
+  email: "info@wlghomes.ca",
   priceRange: "$$",
   url: "https://wlghomes.ca",
   image: "https://wlghomes.ca/images/hero.png",

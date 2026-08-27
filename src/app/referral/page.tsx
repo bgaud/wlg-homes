@@ -1,5 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { breadcrumbList } from "@/lib/schema";
+
+const breadcrumbSchema = breadcrumbList([
+  { name: "Home", url: "https://wlghomes.ca" },
+  { name: "Referral Program", url: "https://wlghomes.ca/referral" },
+]);
 
 export const metadata: Metadata = {
   title: "Referral Program - Earn $150 Cash in Saskatoon",
@@ -54,6 +60,7 @@ const services = [
 export default function ReferralPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       {/* Hero */}
       <section className="bg-[#1e2a3a] text-white py-20 px-4" aria-labelledby="referral-hero-heading">
         <div className="max-w-3xl mx-auto text-center">
@@ -140,8 +147,8 @@ export default function ReferralPage() {
           </p>
           <p className="text-blue-100 mb-8">
             Questions? Reach us at{" "}
-            <a href="mailto:wlghomes2025@gmail.com" className="text-white underline hover:no-underline">
-              wlghomes2025@gmail.com
+            <a href="mailto:info@wlghomes.ca" className="text-white underline hover:no-underline">
+              info@wlghomes.ca
             </a>
           </p>
           <Link

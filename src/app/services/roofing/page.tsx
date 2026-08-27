@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
+import { breadcrumbList } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Roofing Saskatoon - Shingle Replacement & Repairs",
@@ -32,6 +33,12 @@ const serviceSchema = {
   areaServed: "Saskatoon",
   serviceType: "Roofing",
 };
+
+const breadcrumbSchema = breadcrumbList([
+  { name: "Home", url: "https://wlghomes.ca" },
+  { name: "Services", url: "https://wlghomes.ca/services" },
+  { name: "Roofing", url: "https://wlghomes.ca/services/roofing" },
+]);
 
 const faqs = [
   {
@@ -67,6 +74,7 @@ export default function RoofingPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
       {/* Hero */}
       <section className="bg-[#1e2a3a] text-white py-20 px-4" aria-labelledby="roofing-heading">

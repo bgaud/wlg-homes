@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { breadcrumbList } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "We Built a Garage from Scratch - Here's How It Went",
@@ -57,12 +58,22 @@ const articleSchema = {
   },
 };
 
+const breadcrumbSchema = breadcrumbList([
+  { name: "Home", url: "https://wlghomes.ca" },
+  { name: "Blog", url: "https://wlghomes.ca/blog" },
+  { name: "We Built a Garage from Scratch - Here's How It Went", url: "https://wlghomes.ca/blog/garage-build-saskatoon" },
+]);
+
 export default function GarageBuildPage() {
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
       {/* Hero */}

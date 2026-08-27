@@ -1,6 +1,12 @@
 import type { Metadata } from "next";
 import BlogCard from "@/components/BlogCard";
 import { getAllPosts } from "@/lib/blog";
+import { breadcrumbList } from "@/lib/schema";
+
+const breadcrumbSchema = breadcrumbList([
+  { name: "Home", url: "https://wlghomes.ca" },
+  { name: "Blog", url: "https://wlghomes.ca/blog" },
+]);
 
 export const metadata: Metadata = {
   title: "Blog - Saskatoon Trades Tips & Guides",
@@ -28,6 +34,7 @@ export default function BlogPage() {
 
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <section className="bg-[#1e2a3a] text-white py-20 px-4" aria-labelledby="blog-hero-heading">
         <div className="max-w-3xl mx-auto text-center">
           <h1 id="blog-hero-heading" className="text-4xl sm:text-5xl font-extrabold mb-4">

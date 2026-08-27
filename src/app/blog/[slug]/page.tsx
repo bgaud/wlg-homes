@@ -4,6 +4,7 @@ import Link from "next/link";
 import { getAllPosts, getPostBySlug } from "@/lib/blog";
 import { remark } from "remark";
 import remarkHtml from "remark-html";
+import { breadcrumbList } from "@/lib/schema";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -79,11 +80,21 @@ export default async function BlogPostPage({ params }: Props) {
     },
   };
 
+  const breadcrumbSchema = breadcrumbList([
+    { name: "Home", url: "https://wlghomes.ca" },
+    { name: "Blog", url: "https://wlghomes.ca/blog" },
+    { name: post.title, url: `https://wlghomes.ca/blog/${slug}` },
+  ]);
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
       <section className="bg-[#1e2a3a] text-white py-20 px-4" aria-labelledby="post-heading">

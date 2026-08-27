@@ -1,6 +1,12 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { breadcrumbList } from "@/lib/schema";
+
+const breadcrumbSchema = breadcrumbList([
+  { name: "Home", url: "https://wlghomes.ca" },
+  { name: "Portfolio", url: "https://wlghomes.ca/portfolio" },
+]);
 
 export const metadata: Metadata = {
   title: "Portfolio - Roofing, Framing & Electrical Projects Saskatoon",
@@ -79,6 +85,7 @@ const categories = ["All", ...Array.from(new Set(projects.map((p) => p.category)
 export default function PortfolioPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <section className="bg-[#1e2a3a] text-white py-20 px-4" aria-labelledby="portfolio-hero-heading">
         <div className="max-w-3xl mx-auto text-center">
           <h1 id="portfolio-hero-heading" className="text-4xl sm:text-5xl font-extrabold mb-4">

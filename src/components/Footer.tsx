@@ -118,10 +118,10 @@ export default function Footer() {
               <p>Saskatoon, SK, Canada</p>
               <p>
                 <a
-                  href="mailto:wlghomes2025@gmail.com"
+                  href="mailto:info@wlghomes.ca"
                   className="hover:text-white transition-colors"
                 >
-                  wlghomes2025@gmail.com
+                  info@wlghomes.ca
                 </a>
               </p>
               <p>

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
+import { breadcrumbList } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Licensed Electrician Saskatoon - Panel Upgrades & Wiring",
@@ -32,6 +33,12 @@ const serviceSchema = {
   areaServed: "Saskatoon",
   serviceType: "Electrical",
 };
+
+const breadcrumbSchema = breadcrumbList([
+  { name: "Home", url: "https://wlghomes.ca" },
+  { name: "Services", url: "https://wlghomes.ca/services" },
+  { name: "Electrical", url: "https://wlghomes.ca/services/electrical" },
+]);
 
 const faqs = [
   {
@@ -67,6 +74,7 @@ export default function ElectricalPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
       {/* Hero */}
       <section className="bg-[#1e2a3a] text-white py-20 px-4" aria-labelledby="electrical-heading">

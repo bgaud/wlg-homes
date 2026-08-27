@@ -1,6 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
+import { breadcrumbList } from "@/lib/schema";
+
+const breadcrumbSchema = breadcrumbList([
+  { name: "Home", url: "https://wlghomes.ca" },
+  { name: "Services", url: "https://wlghomes.ca/services" },
+]);
 
 export const metadata: Metadata = {
   title: "Services - Roofing, Electrical, Framing, Full Builds & More in Saskatoon",
@@ -71,6 +77,7 @@ const services = [
 export default function ServicesPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <section className="bg-[#1e2a3a] text-white py-20 px-4" aria-labelledby="services-hero-heading">
         <div className="max-w-3xl mx-auto text-center">
           <h1 id="services-hero-heading" className="text-4xl sm:text-5xl font-extrabold mb-4">

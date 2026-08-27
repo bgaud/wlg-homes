@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { breadcrumbList } from "@/lib/schema";
 
 interface AreaData {
   name: string;
@@ -178,9 +179,16 @@ export default async function AreaPage({ params }: Props) {
     serviceType: "Roofing, Framing, Electrical, Renovations, Seasonal Lighting",
   };
 
+  const breadcrumbSchema = breadcrumbList([
+    { name: "Home", url: "https://wlghomes.ca" },
+    { name: "Service Areas", url: "https://wlghomes.ca/areas" },
+    { name: data.name, url: `https://wlghomes.ca/areas/${data.slug}` },
+  ]);
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
       {/* Hero */}
       <section className="bg-[#1e2a3a] text-white py-20 px-4" aria-labelledby="area-heading">
