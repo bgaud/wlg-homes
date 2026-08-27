@@ -8,7 +8,7 @@ const services = [
   { label: "Electrical", href: "/services/electrical" },
   { label: "Garage Framing", href: "/services/framing" },
   { label: "Basement Framing", href: "/services/framing" },
-  { label: "Full Builds", href: "/blog/garage-build-saskatoon" },
+  { label: "Full Builds", href: "/services/full-builds" },
   { label: "Seasonal Lighting", href: "/services/seasonal-lighting" },
 ];
 

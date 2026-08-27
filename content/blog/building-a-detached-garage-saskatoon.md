@@ -62,4 +62,4 @@ WLG Homes provides free estimates for garage framing projects in Saskatoon, Warm
 
 ---
 
-*[Contact WLG Homes](/contact) to get started on your detached garage project in Saskatoon.*
+*[Contact WLG Homes](/contact) to get started on your detached garage project in Saskatoon, or see our [full garage build service](/services/full-builds) for everything included from the pad up.*

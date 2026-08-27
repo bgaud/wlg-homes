@@ -60,4 +60,4 @@ WLG Homes provides free, no-obligation estimates for detached garage builds in S
 
 ---
 
-*[Contact WLG Homes](/contact) for a free garage build estimate in Saskatoon. See a real build from start to finish in our [garage build project story](/blog/garage-build-saskatoon).*
+*[Contact WLG Homes](/contact) for a free garage build estimate in Saskatoon, or see everything included in our [full garage build service](/services/full-builds). See a real build from start to finish in our [garage build project story](/blog/garage-build-saskatoon).*

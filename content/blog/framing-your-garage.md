@@ -32,4 +32,4 @@ A standard 24x24 double garage typically takes 5–10 working days to frame, she
 
 ---
 
-*WLG Homes specializes in garage framing and construction in Saskatoon and surrounding areas. [Get a free estimate](/contact) for your garage project.*
+*WLG Homes specializes in garage framing and construction in Saskatoon and surrounding areas. [Get a free estimate](/contact) for your garage project, or see our [full garage build service](/services/full-builds) for everything included from the pad up.*

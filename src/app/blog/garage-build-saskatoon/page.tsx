@@ -372,10 +372,10 @@ export default function GarageBuildPage() {
               Get a Free Estimate
             </Link>
             <Link
-              href="/services/framing"
+              href="/services/full-builds"
               className="inline-block border-2 border-white/60 text-white hover:bg-white/10 font-semibold px-8 py-4 rounded-md transition-colors"
             >
-              Our Framing Services
+              Our Full Build Service
             </Link>
           </div>
         </div>

@@ -63,7 +63,7 @@ const services = [
     description: "Full detached garage and home builds from the ground up - framing, siding, roofing, and electrical all under one crew. No subcontracting.",
     img: "/images/garage-build/06-siding-progress.jpg",
     alt: "WLG Homes full garage build in Saskatoon - framing, siding, and roofing",
-    href: "/blog/garage-build-saskatoon",
+    href: "/services/full-builds",
   },
   {
     title: "Seasonal Lighting",
