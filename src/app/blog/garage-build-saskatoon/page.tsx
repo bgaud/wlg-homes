@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { breadcrumbList } from "@/lib/schema";
+import { articleSchema, breadcrumbList } from "@/lib/schema";
+import LocalCtas from "@/components/LocalCtas";
+import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "We Built a Garage from Scratch - Here's How It Went",
@@ -32,31 +34,15 @@ export const metadata: Metadata = {
   },
 };
 
-const articleSchema = {
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
+const articleJson = articleSchema({
   headline: "We Built a Garage from Scratch - Here's How It Went",
   description:
     "From a poured concrete pad to finished siding and shingles - a full detached garage build in Saskatoon, told in photos and video.",
-  image: "https://wlghomes.ca/images/garage-build/08-finished.jpg",
-  url: "https://wlghomes.ca/blog/garage-build-saskatoon",
+  url: `${SITE_URL}/blog/garage-build-saskatoon`,
   datePublished: "2026-06-28",
   dateModified: "2026-06-28",
-  author: {
-    "@type": "Organization",
-    name: "WLG Homes",
-    url: "https://wlghomes.ca",
-  },
-  publisher: {
-    "@type": "Organization",
-    name: "WLG Homes",
-    url: "https://wlghomes.ca",
-    logo: {
-      "@type": "ImageObject",
-      url: "https://wlghomes.ca/images/logo.png",
-    },
-  },
-};
+  image: `${SITE_URL}/images/garage-build/08-finished.jpg`,
+});
 
 const breadcrumbSchema = breadcrumbList([
   { name: "Home", url: "https://wlghomes.ca" },
@@ -69,7 +55,7 @@ export default function GarageBuildPage() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJson) }}
       />
       <script
         type="application/ld+json"
@@ -364,20 +350,26 @@ export default function GarageBuildPage() {
           <p className="text-slate-300 text-lg mb-8">
             We build detached garages in Saskatoon and surrounding areas - framing, siding, roofing, and electrical all under one roof. Free estimates, owners on every job.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="/contact"
-              className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold px-8 py-4 rounded-md transition-colors"
-            >
-              Get a Free Estimate
+          <p className="text-slate-300 text-sm mb-6">
+            More garage reading:{" "}
+            <Link href="/blog/saskatoon-garage-building-permit" className="text-blue-300 hover:underline">
+              Saskatoon garage permits
             </Link>
-            <Link
-              href="/services/full-builds"
-              className="inline-block border-2 border-white/60 text-white hover:bg-white/10 font-semibold px-8 py-4 rounded-md transition-colors"
-            >
-              Our Full Build Service
+            ,{" "}
+            <Link href="/blog/how-long-does-a-garage-build-take-saskatoon" className="text-blue-300 hover:underline">
+              how long a build takes
             </Link>
-          </div>
+            ,{" "}
+            <Link href="/blog/hiring-a-garage-builder-saskatoon" className="text-blue-300 hover:underline">
+              hiring a builder
+            </Link>
+            , and{" "}
+            <Link href="/services/full-builds/saskatoon" className="text-blue-300 hover:underline">
+              garage builds in Saskatoon
+            </Link>
+            .
+          </p>
+          <LocalCtas className="justify-center" invert />
         </div>
       </section>
     </>

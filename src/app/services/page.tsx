@@ -126,6 +126,33 @@ export default function ServicesPage() {
         </div>
       </section>
 
+      <section className="py-12 sm:py-16 bg-white" aria-labelledby="saskatoon-local-heading">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6">
+          <h2 id="saskatoon-local-heading" className="text-2xl font-extrabold text-[#1e2a3a] mb-3 text-center">
+            Saskatoon service pages
+          </h2>
+          <p className="text-slate-600 text-sm leading-relaxed mb-8 text-center max-w-3xl mx-auto">
+            Permit notes, neighbourhood context, and FAQs for work inside Saskatoon. Warman, Martensville, Delisle, and Prince Albert have their own area pages.
+          </p>
+          <ul className="grid sm:grid-cols-2 gap-3 max-w-3xl mx-auto">
+            {[
+              { href: "/services/framing/saskatoon", label: "Framing in Saskatoon" },
+              { href: "/services/electrical/saskatoon", label: "Licensed electrician in Saskatoon" },
+              { href: "/services/roofing/saskatoon", label: "Roofing in Saskatoon" },
+              { href: "/services/full-builds/saskatoon", label: "Garage builder in Saskatoon" },
+              { href: "/services/renovations/saskatoon", label: "Basement development in Saskatoon" },
+              { href: "/services/seasonal-lighting/saskatoon", label: "Christmas lighting in Saskatoon" },
+            ].map((item) => (
+              <li key={item.href}>
+                <Link href={item.href} className="text-blue-600 text-sm font-semibold hover:underline">
+                  {item.label} →
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
       <section className="py-16 bg-[#1e2a3a] text-white text-center" aria-labelledby="services-cta-heading">
         <div className="max-w-2xl mx-auto px-4">
           <h2 id="services-cta-heading" className="text-3xl font-extrabold mb-4">

@@ -4,7 +4,9 @@ import Link from "next/link";
 import { getAllPosts, getPostBySlug } from "@/lib/blog";
 import { remark } from "remark";
 import remarkHtml from "remark-html";
-import { breadcrumbList } from "@/lib/schema";
+import { articleSchema, breadcrumbList } from "@/lib/schema";
+import LocalCtas from "@/components/LocalCtas";
+import { SITE_URL } from "@/lib/site";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -55,42 +57,25 @@ export default async function BlogPostPage({ params }: Props) {
       })
     : "";
 
-  const articleSchema = {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
+  const articleJson = articleSchema({
     headline: post.title,
     description: post.excerpt,
-    image: "https://wlghomes.ca/images/hero.png",
-    url: `https://wlghomes.ca/blog/${slug}`,
-    datePublished: post.date || undefined,
-    dateModified: post.date || undefined,
-    author: {
-      "@type": "Organization",
-      name: "WLG Homes",
-      url: "https://wlghomes.ca",
-    },
-    publisher: {
-      "@type": "Organization",
-      name: "WLG Homes",
-      url: "https://wlghomes.ca",
-      logo: {
-        "@type": "ImageObject",
-        url: "https://wlghomes.ca/images/logo.png",
-      },
-    },
-  };
+    url: `${SITE_URL}/blog/${slug}`,
+    datePublished: post.date,
+    dateModified: post.date,
+  });
 
   const breadcrumbSchema = breadcrumbList([
-    { name: "Home", url: "https://wlghomes.ca" },
-    { name: "Blog", url: "https://wlghomes.ca/blog" },
-    { name: post.title, url: `https://wlghomes.ca/blog/${slug}` },
+    { name: "Home", url: SITE_URL },
+    { name: "Blog", url: `${SITE_URL}/blog` },
+    { name: post.title, url: `${SITE_URL}/blog/${slug}` },
   ]);
 
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJson) }}
       />
       <script
         type="application/ld+json"
@@ -136,10 +121,17 @@ export default async function BlogPostPage({ params }: Props) {
               prose-ul:space-y-2 prose-li:text-slate-600"
             dangerouslySetInnerHTML={{ __html: html }}
           />
-          <div className="mt-10 pt-8 border-t border-slate-200">
+          <div className="mt-10 pt-8 border-t border-slate-200 space-y-6">
+            <div>
+              <h2 className="text-xl font-extrabold text-[#1e2a3a] mb-3">Talk through your project</h2>
+              <p className="text-slate-600 text-sm leading-relaxed mb-4">
+                Free on-site estimates. The planning check is a readiness checklist, not a price or permit review.
+              </p>
+              <LocalCtas />
+            </div>
             <Link
               href="/blog"
-              className="text-blue-600 text-sm font-semibold hover:underline"
+              className="text-blue-600 text-sm font-semibold hover:underline inline-block"
             >
               ← Back to Blog
             </Link>

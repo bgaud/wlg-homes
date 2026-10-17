@@ -340,6 +340,14 @@ export default function HomePage() {
               See all services, including renovations and seasonal lighting →
             </Link>
           </p>
+          <p className="text-center mt-3">
+            <Link
+              href="/areas/saskatoon"
+              className="text-sm font-semibold text-blue-700 hover:underline"
+            >
+              Saskatoon service pages and permit notes →
+            </Link>
+          </p>
         </div>
       </section>
 
@@ -400,9 +408,27 @@ export default function HomePage() {
                 Where do you work?
               </h3>
               <p className="text-slate-600 leading-relaxed">
-                We are based in Saskatoon and serve Saskatoon, Warman, Martensville,
-                Delisle, and Prince Albert. If you are nearby and do not see your
-                community listed, ask. We will tell you whether we can take the job.
+                We are based in Saskatoon and serve{" "}
+                <Link href="/areas/saskatoon" className="text-blue-700 font-semibold hover:underline">
+                  Saskatoon
+                </Link>
+                ,{" "}
+                <Link href="/areas/warman" className="text-blue-700 font-semibold hover:underline">
+                  Warman
+                </Link>
+                ,{" "}
+                <Link href="/areas/martensville" className="text-blue-700 font-semibold hover:underline">
+                  Martensville
+                </Link>
+                ,{" "}
+                <Link href="/areas/delisle" className="text-blue-700 font-semibold hover:underline">
+                  Delisle
+                </Link>
+                , and{" "}
+                <Link href="/areas/prince-albert" className="text-blue-700 font-semibold hover:underline">
+                  Prince Albert
+                </Link>
+                . If you are nearby and do not see your community listed, ask. We will tell you whether we can take the job.
               </p>
             </article>
           </div>

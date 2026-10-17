@@ -62,4 +62,8 @@ WLG Homes provides free estimates for garage framing projects in Saskatoon, Warm
 
 ---
 
-*[Contact WLG Homes](/contact) to get started on your detached garage project in Saskatoon, or see our [full garage build service](/services/full-builds) for everything included from the pad up.*
+For current City of Saskatoon drawings and ePermitting steps, read [Do you need a permit to build a garage in Saskatoon?](/blog/saskatoon-garage-building-permit). For the construction sequence, see [How long does a garage build take?](/blog/how-long-does-a-garage-build-take-saskatoon). Questions to ask any builder: [How to hire a garage builder in Saskatoon](/blog/hiring-a-garage-builder-saskatoon).
+
+---
+
+*[Contact WLG Homes](/contact) to get started on your detached garage project in Saskatoon, run the [planning check](/planning-check), or see our [Saskatoon garage builds](/services/full-builds/saskatoon) page.*

@@ -42,4 +42,8 @@ WLG Homes is a Saskatoon-based renovation contractor built around three tradespe
 
 ---
 
-*Planning a renovation in Saskatoon, Warman, or Martensville? [Contact WLG Homes](/contact) for a free, in-person estimate, or learn more about our [renovation services](/services/renovations).*
+Hiring specifically for a detached garage? Use [How to hire a garage builder in Saskatoon](/blog/hiring-a-garage-builder-saskatoon). For basement paperwork, see [basement development permits](/blog/saskatoon-basement-development-permit).
+
+---
+
+*Planning a renovation in Saskatoon, Warman, or Martensville? [Contact WLG Homes](/contact) for a free, in-person estimate, start the [planning check](/planning-check), or learn more about [basement development in Saskatoon](/services/renovations/saskatoon).*

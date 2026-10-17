@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { breadcrumbList } from "@/lib/schema";
+import SaskatoonLocalLink from "@/components/SaskatoonLocalLink";
 
 export const metadata: Metadata = {
   title: "Roofing Saskatoon - Shingle Replacement & Repairs",
@@ -169,6 +170,8 @@ export default function RoofingPage() {
           </div>
         </div>
       </section>
+
+      <SaskatoonLocalLink href="/services/roofing/saskatoon" label="Roofing in Saskatoon" />
 
       {/* CTA */}
       <section className="py-16 bg-blue-600 text-white text-center" aria-labelledby="roofing-cta-heading">
