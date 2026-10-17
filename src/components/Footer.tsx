@@ -18,6 +18,7 @@ const quickLinks = [
   { href: "/services", label: "Services" },
   { href: "/portfolio", label: "Portfolio" },
   { href: "/blog", label: "Blog" },
+  { href: "/planning-check", label: "Planning Check" },
   { href: "/referral", label: "Referral Program" },
   { href: "/contact", label: "Contact" },
 ];

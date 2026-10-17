@@ -11,6 +11,7 @@ const navLinks = [
   { href: "/services", label: "Services" },
   { href: "/portfolio", label: "Portfolio" },
   { href: "/blog", label: "Blog" },
+  { href: "/planning-check", label: "Planning Check" },
 ];
 
 export default function Header() {
@@ -18,10 +19,9 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-[#0f1e35]/85 backdrop-blur-md border-b border-blue-900/40">
+    <header className="sticky top-0 z-50 bg-[#0f1e35]/90 backdrop-blur-md border-b border-blue-900/40">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          {/* Logo */}
           <Link
             href="/"
             aria-label="WLG Homes - go to homepage"
@@ -37,8 +37,7 @@ export default function Header() {
             />
           </Link>
 
-          {/* Desktop Nav */}
-          <nav aria-label="Main navigation" className="hidden md:flex items-center gap-6">
+          <nav aria-label="Main navigation" className="hidden lg:flex items-center gap-5">
             {navLinks.map(({ href, label }) => {
               const isActive =
                 href === "/" ? pathname === "/" : pathname.startsWith(href);
@@ -49,7 +48,7 @@ export default function Header() {
                   aria-current={isActive ? "page" : undefined}
                   className={`text-sm font-medium transition-colors pb-0.5 ${
                     isActive
-                      ? "text-white border-b-2 border-blue-400"
+                      ? "text-white border-b-2 border-[#c9a84c]"
                       : "text-slate-300 hover:text-white border-b-2 border-transparent"
                   }`}
                 >
@@ -59,22 +58,21 @@ export default function Header() {
             })}
             <a
               href="tel:13062706616"
-              className="text-slate-300 hover:text-white text-sm font-medium transition-colors"
+              className="text-slate-300 hover:text-white text-sm font-medium transition-colors min-h-11 inline-flex items-center"
               aria-label="Call WLG Homes at 306-270-6616"
             >
               306-270-6616
             </a>
             <Link
               href="/contact"
-              className="bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-4 py-2 rounded-md transition-colors"
+              className="bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-4 py-2.5 rounded-md transition-colors min-h-11 inline-flex items-center"
             >
               Get a Quote
             </Link>
           </nav>
 
-          {/* Mobile Hamburger */}
           <button
-            className="md:hidden text-white p-2 rounded-md focus-visible:ring-2 focus-visible:ring-blue-400"
+            className="lg:hidden text-white p-2.5 rounded-md min-h-11 min-w-11 focus-visible:ring-2 focus-visible:ring-blue-400"
             aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
             aria-expanded={menuOpen}
             aria-controls="mobile-menu"
@@ -98,12 +96,11 @@ export default function Header() {
         </div>
       </div>
 
-      {/* Mobile Menu */}
       {menuOpen && (
         <nav
           id="mobile-menu"
           aria-label="Mobile navigation"
-          className="md:hidden bg-[#1e2a3a] border-t border-white/10 px-4 pb-4"
+          className="lg:hidden bg-[#1e2a3a] border-t border-white/10 px-4 pb-4"
         >
           <ul role="list" className="flex flex-col gap-1 pt-2">
             {navLinks.map(({ href, label }) => {
@@ -115,7 +112,7 @@ export default function Header() {
                     href={href}
                     aria-current={isActive ? "page" : undefined}
                     onClick={() => setMenuOpen(false)}
-                    className={`block px-3 py-2 rounded-md text-sm font-medium ${
+                    className={`block px-3 py-3 rounded-md text-base font-medium min-h-11 ${
                       isActive
                         ? "bg-blue-600 text-white"
                         : "text-slate-300 hover:bg-white/10 hover:text-white"
@@ -129,7 +126,7 @@ export default function Header() {
             <li>
               <a
                 href="tel:13062706616"
-                className="block px-3 py-2 rounded-md text-sm font-medium text-slate-300 hover:bg-white/10 hover:text-white"
+                className="block px-3 py-3 rounded-md text-base font-medium text-slate-300 hover:bg-white/10 hover:text-white min-h-11"
                 aria-label="Call WLG Homes at 306-270-6616"
               >
                 Call: 306-270-6616
@@ -139,7 +136,7 @@ export default function Header() {
               <Link
                 href="/contact"
                 onClick={() => setMenuOpen(false)}
-                className="block mt-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-3 py-2 rounded-md text-center"
+                className="block mt-2 bg-blue-600 hover:bg-blue-700 text-white text-base font-semibold px-3 py-3 rounded-md text-center min-h-12"
               >
                 Get a Quote
               </Link>

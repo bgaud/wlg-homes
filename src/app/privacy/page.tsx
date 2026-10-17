@@ -20,7 +20,7 @@ export default function PrivacyPage() {
       <section className="py-20 bg-white">
       <div className="max-w-3xl mx-auto px-4 sm:px-6">
         <h1 className="text-4xl font-extrabold text-[#1e2a3a] mb-4">Privacy Policy</h1>
-        <p className="text-slate-500 text-sm mb-10">Last updated: January 1, 2026</p>
+        <p className="text-slate-500 text-sm mb-10">Last updated: 17 October 2026</p>
 
         <div className="prose prose-slate max-w-none space-y-6 text-slate-600">
           <section aria-labelledby="privacy-intro">
@@ -36,13 +36,13 @@ export default function PrivacyPage() {
             <h2 id="privacy-collect" className="text-xl font-bold text-[#1e2a3a] mb-2">Information We Collect</h2>
             <p>We collect information you provide directly to us, including:</p>
             <ul className="list-disc pl-5 space-y-1">
-              <li>Your name, email address, and phone number when you submit our contact form</li>
-              <li>The details of your project or service inquiry</li>
+              <li>Your name, email address, and phone number when you submit our quote form or email a planning-check summary</li>
+              <li>Project type, lot or location, timeline, optional budget range, and the details of your inquiry or checklist answers</li>
             </ul>
             <p className="mt-3">
-              We also collect standard analytics data through Vercel Analytics, which may include
-              page views, referring URLs, and general geographic region. This data is aggregated
-              and does not identify you personally.
+              We also collect standard analytics data through Vercel Analytics and Google
+              Analytics, which may include page views, referring URLs, and general geographic
+              region. This data is used to understand how the site is used.
             </p>
           </section>
 
@@ -63,9 +63,11 @@ export default function PrivacyPage() {
           <section aria-labelledby="privacy-storage">
             <h2 id="privacy-storage" className="text-xl font-bold text-[#1e2a3a] mb-2">Data Storage & Security</h2>
             <p>
-              Contact form submissions are processed and stored securely. We take reasonable
-              measures to protect your information from unauthorized access. However, no method
-              of transmission over the internet is 100% secure.
+              Quote and planning-check submissions are processed by our website and may be
+              stored in a private Google Sheet used by WLG Homes. Email notifications and
+              customer confirmations are sent with Resend when that service is configured.
+              We take reasonable measures to protect your information from unauthorized access.
+              However, no method of transmission over the internet is 100% secure.
             </p>
           </section>
 
