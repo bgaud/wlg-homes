@@ -17,7 +17,7 @@ export default function BlogCard({ slug, title, date, excerpt }: BlogCardProps) 
     : "";
 
   return (
-    <article className="bg-white rounded-xl border border-slate-200 p-6 hover:shadow-md transition-shadow flex flex-col gap-3">
+    <article className="card-lift bg-white rounded-xl border border-slate-200 p-6 hover:shadow-md flex flex-col gap-3">
       {formatted && (
         <time dateTime={date} className="text-xs text-slate-400 uppercase tracking-wider">
           {formatted}

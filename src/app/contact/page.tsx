@@ -33,14 +33,14 @@ export default function ContactPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       {/* Hero */}
-      <section className="bg-[#1e2a3a] text-white py-20 px-4" aria-labelledby="contact-hero-heading">
+      <section className="bg-[#1e2a3a] text-white py-16 sm:py-20 px-4" aria-labelledby="contact-hero-heading">
         <div className="max-w-3xl mx-auto text-center">
-          <h1 id="contact-hero-heading" className="text-4xl sm:text-5xl font-extrabold mb-4">
-            Get in Touch
+          <h1 id="contact-hero-heading" className="font-heading text-4xl sm:text-5xl font-semibold mb-4">
+            Request a free estimate
           </h1>
           <p className="text-slate-300 text-lg">
-            Request a free estimate or ask us anything. We&rsquo;ll get back to you within
-            one business day.
+            Tell us about the project, lot, and timing. We will get back to you within
+            one business day with a clear next step, not a pressure pitch.
           </p>
         </div>
       </section>
@@ -48,10 +48,17 @@ export default function ContactPage() {
       {/* Form + Info */}
       <section className="py-16 bg-[#f8fafc]" aria-labelledby="contact-form-heading">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 grid lg:grid-cols-[1fr_360px] gap-12">
-          <div className="bg-white rounded-xl border border-slate-200 p-8 shadow-sm">
-            <h2 id="contact-form-heading" className="text-2xl font-extrabold text-[#1e2a3a] mb-6">
-              Send Us a Message
+          <div className="bg-white rounded-xl border border-slate-200 p-5 sm:p-8 shadow-sm">
+            <h2 id="contact-form-heading" className="font-heading text-2xl font-semibold text-[#1e2a3a] mb-2">
+              Quote request
             </h2>
+            <p className="text-slate-500 text-sm mb-6">
+              Required fields take about a minute. Prefer a checklist first? Try the{" "}
+              <a href="/planning-check" className="text-blue-700 font-semibold hover:underline">
+                project planning check
+              </a>
+              .
+            </p>
             <ContactForm />
           </div>
 
@@ -62,6 +69,7 @@ export default function ContactPage() {
                 <p>
                   <span className="font-semibold text-[#1e2a3a] block">Location</span>
                   Saskatoon, SK, Canada
+                  {/* TODO: add public street address and postal code when the owner confirms it */}
                 </p>
                 <p>
                   <span className="font-semibold text-[#1e2a3a] block">Phone</span>

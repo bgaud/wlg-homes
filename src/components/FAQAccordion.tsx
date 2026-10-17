@@ -13,7 +13,7 @@ const faqs = [
   },
   {
     q: "What areas do you serve?",
-    a: "We are based in Saskatoon, SK and serve the greater Saskatoon area including surrounding communities. Contact us if you're unsure whether we cover your location.",
+    a: "We are based in Saskatoon, SK and serve Saskatoon, Warman, Martensville, Delisle, and Prince Albert. Contact us if you are nearby and unsure whether we cover your location.",
   },
   {
     q: "How long does a typical renovation take?",

@@ -1,19 +1,35 @@
 import type { Metadata } from "next";
+import { Fraunces, Source_Sans_3 } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import RevealRoot from "@/components/RevealRoot";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import Script from "next/script";
+import { localBusinessSchema, websiteSchema } from "@/lib/schema";
+import { SITE_URL } from "@/lib/site";
+
+const heading = Fraunces({
+  subsets: ["latin"],
+  variable: "--font-heading",
+  display: "swap",
+});
+
+const body = Source_Sans_3({
+  subsets: ["latin"],
+  variable: "--font-body",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://wlghomes.ca"),
+  metadataBase: new URL(SITE_URL),
   title: {
     default: "WLG Homes | Saskatoon Trades & Construction",
     template: "%s | WLG Homes",
   },
   description:
-    "WLG Homes offers expert roofing, framing, electrical, and renovation services in Saskatoon, SK. 45+ years combined experience.",
+    "WLG Homes is a Saskatoon-area trades and construction company. Framing, licensed electrical, roofing, full garage builds, renovations, and seasonal lighting. Free estimates.",
   keywords: [
     "roofing Saskatoon",
     "licensed electrician Saskatoon",
@@ -25,21 +41,25 @@ export const metadata: Metadata = {
     "construction framing Saskatoon",
     "renovation contractor Saskatoon",
     "Christmas lighting installation",
+    "home builder Saskatoon",
   ],
+  alternates: {
+    canonical: SITE_URL,
+  },
   openGraph: {
     siteName: "WLG Homes",
     locale: "en_CA",
     type: "website",
     title: "WLG Homes | Saskatoon Trades & Construction",
     description:
-      "WLG Homes offers expert roofing, framing, electrical, and renovation services in Saskatoon, SK. 45+ years combined experience.",
-    url: "https://wlghomes.ca",
+      "Framing, licensed electrical, roofing, full garage builds, renovations, and seasonal lighting in Saskatoon, Warman, Martensville, Delisle, and Prince Albert.",
+    url: SITE_URL,
     images: [
       {
         url: "/images/hero.png",
         width: 1200,
         height: 630,
-        alt: "WLG Homes - Saskatoon Trades & Construction",
+        alt: "WLG Homes residential construction framing in Saskatoon",
       },
     ],
   },
@@ -47,47 +67,18 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "WLG Homes | Saskatoon Trades & Construction",
     description:
-      "WLG Homes offers expert roofing, framing, electrical, and renovation services in Saskatoon, SK. 45+ years combined experience.",
+      "Framing, licensed electrical, roofing, full garage builds, renovations, and seasonal lighting in the Saskatoon area.",
     images: ["/images/hero.png"],
   },
 };
 
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": ["LocalBusiness", "GeneralContractor"],
-  name: "WLG Homes",
-  description:
-    "Expert roofing, framing, electrical, and renovation services in Saskatoon, SK.",
-  areaServed: [
-    { "@type": "City", name: "Saskatoon" },
-    { "@type": "City", name: "Warman" },
-    { "@type": "City", name: "Martensville" },
-    { "@type": "City", name: "Delisle" },
-    { "@type": "City", name: "Prince Albert" },
-  ],
-  address: {
-    "@type": "PostalAddress",
-    addressLocality: "Saskatoon",
-    addressRegion: "SK",
-    addressCountry: "CA",
-  },
-  telephone: "+13062706616",
-  email: "info@wlghomes.ca",
-  priceRange: "$$",
-  url: "https://wlghomes.ca",
-  image: "https://wlghomes.ca/images/hero.png",
-  openingHours: ["Mo-Fr 07:00-18:00", "Sa 08:00-16:00"],
-  sameAs: [
-    "https://www.facebook.com/profile.php?id=61584288716942",
-    "https://www.google.com/maps/place/WLG+Homes/@52.2379344,-106.6449313,9z/data=!3m1!4b1!4m6!3m5!1s0x2c693299ff943e9d:0xeed9c522fc9ab8bc!8m2!3d52.2379344!4d-106.6449313!16s%2Fg%2F11z1jxd2j4",
-  ],
-};
+const jsonLd = [localBusinessSchema(), websiteSchema()];
 
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en-CA">
+    <html lang="en-CA" className={`${heading.variable} ${body.variable}`}>
       <head>
         <script
           type="application/ld+json"
@@ -100,7 +91,7 @@ export default function RootLayout({
         </a>
         <Header />
         <main id="main-content" className="flex-1">
-          {children}
+          <RevealRoot>{children}</RevealRoot>
         </main>
         <Footer />
         <Analytics />

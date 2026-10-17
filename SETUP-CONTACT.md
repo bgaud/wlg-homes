@@ -1,10 +1,16 @@
 # Contact Form Setup Guide
 
-The WLG Homes contact form POSTs to `/api/contact`, which:
-1. Appends a row to a Google Sheet
-2. Sends an email notification via Resend
+The quote form, thank-you page, and project planning check all POST to `/api/contact`. That route:
 
-Follow these steps to set it up.
+1. Validates the payload on the server
+2. Drops honeypot and too-fast submissions (still returns success so bots are not taught the rules)
+3. Rate-limits each IP to 5 submissions per hour
+4. Appends a row to a Google Sheet (existing delivery path)
+5. Sends an owner notification and a customer auto-reply via Resend when configured
+
+Quote fields: name, email, phone, project type, lot or location, timeline, optional budget range, and message.
+
+Planning-check email uses the same route with `source=planning-check` and the on-screen summary as the message.
 
 ---
 
@@ -13,8 +19,10 @@ Follow these steps to set it up.
 ### Create the Sheet
 1. Go to [Google Sheets](https://sheets.google.com) and create a new spreadsheet
 2. Name it something like **WLG Homes - Contact Submissions**
-3. In row 1, add headers: `Timestamp`, `Name`, `Email`, `Phone`, `Message`
-4. Note the Sheet ID from the URL: `https://docs.google.com/spreadsheets/d/SHEET_ID/edit`
+3. In row 1, add headers:
+   `Timestamp`, `Name`, `Email`, `Phone`, `Message`, `Project Type`, `Location`, `Timeline`, `Budget`, `Source`
+4. Existing sheets that only have `Timestamp` through `Message` still work. New columns are appended after Message and do not overwrite A-E.
+5. Note the Sheet ID from the URL: `https://docs.google.com/spreadsheets/d/SHEET_ID/edit`
 
 ### Create a Service Account
 1. Go to [Google Cloud Console](https://console.cloud.google.com)
@@ -42,12 +50,15 @@ GOOGLE_SHEET_ID=your_sheet_id
 
 1. Sign up at [resend.com](https://resend.com)
 2. Go to **API Keys** and create a new key
-3. (Optional) Add and verify your own domain under **Domains** for a custom `from` address
+3. (Recommended) Add and verify your own domain under **Domains** for a custom `from` address such as `WLG Homes <info@wlghomes.ca>`
 4. Set the variables:
 ```
 RESEND_API_KEY=re_xxxxxxxxxxxx
 EMAIL_FROM=onboarding@resend.dev   # or your verified domain email
+EMAIL_TO=info@wlghomes.ca          # optional; defaults to info@wlghomes.ca
 ```
+
+If `RESEND_API_KEY` is missing, the API still accepts the lead, appends the Sheet when Sheets is configured, and logs a clear warning that owner email and auto-reply were skipped.
 
 ---
 
@@ -55,7 +66,7 @@ EMAIL_FROM=onboarding@resend.dev   # or your verified domain email
 
 When deploying to Vercel:
 1. Go to your project → **Settings → Environment Variables**
-2. Add each variable from `.env.example` with the real values
+2. Add each variable from `.env.example` with the real values (Production and Preview)
 3. Redeploy - the contact form will be live
 
 ---
@@ -72,4 +83,4 @@ Then run:
 npm run dev
 ```
 
-> **Note:** If `GOOGLE_SERVICE_ACCOUNT_KEY` or `RESEND_API_KEY` are not set, those steps are skipped silently - the form will still return `{ success: true }` in development.
+If `GOOGLE_SERVICE_ACCOUNT_KEY` or `RESEND_API_KEY` are not set, those steps are skipped and a warning is logged. The form still returns `{ success: true }` so local UI testing works.
