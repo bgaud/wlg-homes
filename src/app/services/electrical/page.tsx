@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { breadcrumbList } from "@/lib/schema";
+import SaskatoonLocalLink from "@/components/SaskatoonLocalLink";
 
 export const metadata: Metadata = {
   title: "Licensed Electrician Saskatoon - Panel Upgrades & Wiring",
@@ -169,6 +170,8 @@ export default function ElectricalPage() {
           </div>
         </div>
       </section>
+
+      <SaskatoonLocalLink href="/services/electrical/saskatoon" label="Licensed electrician in Saskatoon" />
 
       {/* CTA */}
       <section className="py-16 bg-blue-600 text-white text-center" aria-labelledby="electrical-cta-heading">

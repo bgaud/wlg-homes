@@ -42,4 +42,8 @@ Full basement development costs more than framing alone, since it adds electrica
 
 ---
 
-*WLG Homes provides basement development, framing, and licensed electrical services across Saskatoon, Warman, and Martensville. [Contact us](/contact) for a free, in-person estimate on your basement project, or learn more about our [renovation services](/services/renovations).*
+For the City’s current application checklist, read [Basement development permits in Saskatoon](/blog/saskatoon-basement-development-permit). For layout decisions before you apply, see [Planning a basement development in Saskatoon](/blog/planning-a-basement-development-saskatoon). Electrical is a separate TSASK file: [Electrical permits in Saskatoon](/blog/electrical-permits-saskatoon).
+
+---
+
+*WLG Homes provides basement development, framing, and licensed electrical services across Saskatoon, Warman, and Martensville. [Contact us](/contact) for a free, in-person estimate, start the [planning check](/planning-check), or see [basement development in Saskatoon](/services/renovations/saskatoon).*

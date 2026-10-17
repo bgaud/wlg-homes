@@ -130,12 +130,20 @@ export default function AreasPage() {
           <p className="text-slate-300 text-lg mb-8">
             Free estimates for roofing, framing, electrical, and seasonal lighting across our service area.
           </p>
-          <Link
-            href="/contact"
-            className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold px-8 py-4 rounded-md transition-colors"
-          >
-            Get a Free Estimate
-          </Link>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              href="/contact"
+              className="inline-flex items-center justify-center min-h-12 bg-blue-600 hover:bg-blue-700 text-white font-bold px-8 py-4 rounded-md transition-colors"
+            >
+              Get a Free Estimate
+            </Link>
+            <Link
+              href="/planning-check"
+              className="inline-flex items-center justify-center min-h-12 border-2 border-white/60 text-white hover:bg-white/10 font-semibold px-8 py-4 rounded-md transition-colors"
+            >
+              Start a Planning Check
+            </Link>
+          </div>
         </div>
       </section>
     </>

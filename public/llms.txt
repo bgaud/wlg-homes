@@ -16,14 +16,31 @@ Website: https://wlghomes.ca
 - [About](https://wlghomes.ca/about): Company story and owners Dawson Wiederhold (lead framer), Riley Lajuenesse (licensed electrician), and Braedon Gaudet (licensed electrician).
 - [Services](https://wlghomes.ca/services): Index of roofing, electrical, framing, full builds, renovations, and seasonal lighting.
 - [Framing](https://wlghomes.ca/services/framing): New-build, basement, garage, and addition framing.
+- [Framing in Saskatoon](https://wlghomes.ca/services/framing/saskatoon): Saskatoon-specific framing page with City permit notes and FAQs.
 - [Electrical](https://wlghomes.ca/services/electrical): Licensed electrical, panel upgrades, and wiring.
+- [Licensed electrician in Saskatoon](https://wlghomes.ca/services/electrical/saskatoon): TSASK electrical permits, panel upgrades, and in-house licensed electricians.
 - [Roofing](https://wlghomes.ca/services/roofing): Shingle replacement, repairs, and new roofs.
+- [Roofing in Saskatoon](https://wlghomes.ca/services/roofing/saskatoon): Saskatoon roofing, including when a building permit may or may not apply.
 - [Full builds](https://wlghomes.ca/services/full-builds): Detached garage and structure builds (concrete coordination, framing, siding, roofing, electrical).
+- [Garage builder in Saskatoon](https://wlghomes.ca/services/full-builds/saskatoon): Detached garage builds with City garage-guide and ePermitting notes.
 - [Renovations](https://wlghomes.ca/services/renovations): Home renovations and basement development.
+- [Basement development in Saskatoon](https://wlghomes.ca/services/renovations/saskatoon): Basement and renovation work with City basement-guide facts.
 - [Seasonal lighting](https://wlghomes.ca/services/seasonal-lighting): Christmas lighting install and takedown.
+- [Christmas lighting in Saskatoon](https://wlghomes.ca/services/seasonal-lighting/saskatoon): Holiday lighting for Saskatoon homes.
 - [Portfolio](https://wlghomes.ca/portfolio): Selected completed projects in the Saskatoon area.
 - [Blog](https://wlghomes.ca/blog): Practical guides for Saskatoon homeowners.
 - [Areas](https://wlghomes.ca/areas): Communities served in and around Saskatoon.
+- [Saskatoon](https://wlghomes.ca/areas/saskatoon): City-wide trades page with links to each Saskatoon service page.
+- [Warman](https://wlghomes.ca/areas/warman): Warman services and City of Warman permit notes (including published 12–16 business day typical review).
+- [Martensville](https://wlghomes.ca/areas/martensville): Martensville services; development plus building permit; BuildTECH inspections.
+- [Delisle](https://wlghomes.ca/areas/delisle): Delisle services; building permits through the Town of Delisle.
+- [Prince Albert](https://wlghomes.ca/areas/prince-albert): Prince Albert services; City permit processing up to 20 days as published by the City.
+- [Garage building permit (Saskatoon)](https://wlghomes.ca/blog/saskatoon-garage-building-permit): Sourced City of Saskatoon garage permit walkthrough.
+- [Basement development permit (Saskatoon)](https://wlghomes.ca/blog/saskatoon-basement-development-permit): Sourced City basement permit walkthrough.
+- [How long a garage build takes](https://wlghomes.ca/blog/how-long-does-a-garage-build-take-saskatoon): Sequence of a garage build without invented city-wide durations.
+- [Planning a basement development](https://wlghomes.ca/blog/planning-a-basement-development-saskatoon): Layout, egress, and suite-versus-rec-room planning.
+- [Hiring a garage builder](https://wlghomes.ca/blog/hiring-a-garage-builder-saskatoon): Questions to ask a Saskatoon garage contractor.
+- [Electrical permits in Saskatoon](https://wlghomes.ca/blog/electrical-permits-saskatoon): TSASK electrical permits versus City building permits.
 - [Contact / free estimate](https://wlghomes.ca/contact): Quote request form.
 - [Project planning check](https://wlghomes.ca/planning-check): Free non-numeric readiness checklist for homeowners. Not a cost estimate and not financial or legal advice.
 - [Referral program](https://wlghomes.ca/referral): Up to $150 cash when a referred job is complete and paid.

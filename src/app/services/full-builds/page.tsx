@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { breadcrumbList } from "@/lib/schema";
+import SaskatoonLocalLink from "@/components/SaskatoonLocalLink";
 
 export const metadata: Metadata = {
   title: "Garage Builder Saskatoon - Full Detached Garage Builds",
@@ -212,6 +213,8 @@ export default function FullBuildsPage() {
           </div>
         </div>
       </section>
+
+      <SaskatoonLocalLink href="/services/full-builds/saskatoon" label="Garage builder in Saskatoon" />
 
       {/* CTA */}
       <section className="py-16 bg-blue-600 text-white text-center" aria-labelledby="fullbuilds-cta-heading">

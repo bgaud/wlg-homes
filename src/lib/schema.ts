@@ -113,7 +113,9 @@ export function serviceSchema(opts: {
   description: string;
   url: string;
   serviceType: string;
+  areaServed?: string[];
 }) {
+  const areas = opts.areaServed ?? [...AREAS_SERVED];
   return {
     "@context": "https://schema.org",
     "@type": "Service",
@@ -128,9 +130,63 @@ export function serviceSchema(opts: {
       url: SITE_URL,
       telephone: SITE_PHONE_E164,
     },
-    areaServed: AREAS_SERVED.map((name) => ({
+    areaServed: areas.map((name) => ({
       "@type": "City",
       name,
     })),
+  };
+}
+
+export function faqPageSchema(faqs: { q: string; a: string }[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.q,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.a,
+      },
+    })),
+  };
+}
+
+export function articleSchema(opts: {
+  headline: string;
+  description: string;
+  url: string;
+  datePublished?: string;
+  dateModified?: string;
+  image?: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": ["Article", "BlogPosting"],
+    headline: opts.headline,
+    description: opts.description,
+    image: opts.image ?? `${SITE_URL}/images/hero.png`,
+    url: opts.url,
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": opts.url,
+    },
+    inLanguage: "en-CA",
+    datePublished: opts.datePublished || undefined,
+    dateModified: opts.dateModified || opts.datePublished || undefined,
+    author: {
+      "@type": "Organization",
+      name: SITE_NAME,
+      url: SITE_URL,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: SITE_NAME,
+      url: SITE_URL,
+      logo: {
+        "@type": "ImageObject",
+        url: `${SITE_URL}/images/logo.png`,
+      },
+    },
   };
 }
