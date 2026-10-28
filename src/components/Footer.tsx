@@ -148,8 +148,19 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-white/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 text-xs text-slate-500 flex flex-col sm:flex-row justify-between gap-2">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 text-xs text-slate-500 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
           <p>&copy; {new Date().getFullYear()} WLG Homes. All rights reserved.</p>
+          <p>
+            Website by{" "}
+            <a
+              href="https://jtmmarketing.ca/"
+              target="_blank"
+              rel="noopener"
+              className="hover:text-slate-300 transition-colors"
+            >
+              JTM Marketing
+            </a>
+          </p>
           <div className="flex gap-4">
             <Link href="/privacy" className="hover:text-slate-300 transition-colors">
               Privacy Policy
